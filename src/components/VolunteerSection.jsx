@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { IMAGES } from '../constants/images';
 
 const VolunteerSection = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const VolunteerSection = () => {
           <button className="btn-primary">{t('volunteer.cta')}</button>
         </div>
         <div className="volunteer-visual">
-          <img src="/images/event-beneficiaries.jpg" alt={t('volunteer.alt')} />
+          <img src={IMAGES.volunteerTeam} alt={t('volunteer.alt')} style={{ borderRadius: '16px' }} />
         </div>
       </div>
     </section>

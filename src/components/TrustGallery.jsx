@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { IMAGES } from '../constants/images';
 
 const CertificateCard = ({ image, title }) => (
   <div className="certificate-card">
@@ -16,10 +17,10 @@ const TrustGallery = () => {
   const { t } = useTranslation();
 
   const certificates = [
-    { image: "/images/certificates/ministry-appreciation.jpg", title: t('trust.certTitles.ministry') },
-    { image: "/images/certificates/reg-cert-1.png", title: t('trust.certTitles.reg1') },
-    { image: "/images/certificates/reg-cert-2.png", title: t('trust.certTitles.reg2') },
-    { image: "/images/certificates/appreciation-1.jpg", title: t('trust.certTitles.appreciation') }
+    { image: IMAGES.trustMinistry, title: t('trust.certTitles.ministry') },
+    { image: IMAGES.trustCert1, title: t('trust.certTitles.reg1') },
+    { image: IMAGES.trustCert2, title: t('trust.certTitles.reg2') },
+    { image: IMAGES.trustAward, title: t('trust.certTitles.appreciation') }
   ];
 
   return (

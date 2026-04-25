@@ -18,6 +18,7 @@ i18n
             home: "الرئيسية",
             impact: "إنجازاتنا",
             about: "عن المؤسسة",
+            projects: "مشاريعنا الطبية",
             contact: "اتصل بنا",
             open: "فتح القائمة",
             close: "إغلاق القائمة"
@@ -25,7 +26,7 @@ i18n
           hero: {
             title: "نحن نصنع الفرق في حياة الناس",
             description: "مؤسسة مشهرة برقم 1784 لسنة 2007، تعمل على تمكين المجتمع من خلال الدعم الطبي والغذائي والاجتماعي.",
-            supportBtn: "دعمنا الآن"
+            supportBtn: "ادعمنا الآن"
           },
           metrics: {
             ramadanMeals: "وجبة رمضان",
@@ -36,15 +37,26 @@ i18n
             prescriptions: "روشتة مجانية"
           },
           about: {
-            title: "عن المؤسسة",
-            mission: "رسالتنا",
-            missionText: "نسعى لتقديم دعم شامل للفئات الأكثر احتياجاً من خلال برامج غذائية وطبية واجتماعية مستدامة.",
-            history: "تاريخنا",
-            historyText: "تأسست مؤسسة عباد الرحمن في عام 2007 ككيان رسمي مشهر برقم 1784، ومنذ ذلك الحين ونحن نخدم المجتمع بصدق وشفافية.",
-            altEvent: "حدث مؤسسي"
+            title: "من نحن وماذا نريد؟",
+            mission: "رؤيتنا",
+            missionText: "نسعى لنكون النموذج الأول في تقديم الخدمة الطبية المجانية بجودة عالمية، وتحويل التبرعات إلى أصول خيرية تخدم الأجيال.",
+            history: "أهدافنا في سطور",
+            historyText: "تقديم خدمات طبية مجانية عبر المجمع الطبي، استدامة مطبخ النمروط ليصل لآلاف الأسر، رعاية الأيتام، وتنمية القرية للنهوض بالخدمات العامة.",
+            altEvent: "فعالية المؤسسة"
+          },
+          activities: {
+            title: "أنشطتنا ومجالات عملنا",
+            kitchen: "مطبخ النمروط الخيري",
+            kitchenDesc: "يتم طهي 25,000 وجبة طوال شهر رمضان وتوزيعها حتى باب المستحقين. (8 سنوات وما زال الخير يتدفق)",
+            pharmacy: "صيدلية النمروط الخيرية",
+            pharmacyDesc: "صرف علاج مجاني للفقراء طوال العام. الدواء حق لكل محتاج بمتوسط 50,000 جنيه شهرياً.",
+            medical: "المجمع الطبي الخيري الحالي",
+            medicalDesc: "10 سنوات من التميز. رعاية طبية متكاملة بلا مقابل تشمل حضانات، جراحة عامة، وأكثر من 13 عيادة.",
+            aid: "مساعدات شهرية وعامة",
+            aidDesc: "دعم أكثر من 250 أسرة بتكلفة شهرية 200,000 جنيه، وتوفير أجهزة طبية ودعم معيشي طارئ."
           },
           volunteer: {
-            title: "فريق النمروث",
+            title: "فريق النمروط",
             description: "كن جزءاً من التغيير. انضم إلى متطوعينا وساهم في رسم البسمة على وجوه المحتاجين.",
             cta: "انضم إلينا الآن"
           },
@@ -97,10 +109,10 @@ i18n
             medicalValue: "1,396"
           },
           volunteer: {
-            title: "فريق النمروث",
+            title: "فريق النمروط",
             description: "كن جزءاً من التغيير. انضم إلى متطوعينا وساهم في رسم البسمة على وجوه المحتاجين.",
             cta: "انضم إلينا الآن",
-            alt: "متطوعو فريق النمروث"
+            alt: "متطوعو فريق النمروط"
           },
           social: {
             fb: "فيسبوك",
@@ -110,6 +122,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "جميع الحقوق محفوظة."
+          },
+          projects: {
+            title: "مشاريعنا الطبية القادمة",
+            subtitle: "نعمل على إنشاء مراكز طبية متخصصة لخدمة المجتمع (قيد الإنشاء)",
+            radiology: "مركز أشعة متكامل",
+            radiologyDesc: "توفير أحدث أجهزة الأشعة التشخيصية لخدمة المرضى مجاناً أو بأسعار رمزية.",
+            eye: "مركز جراحة عيون",
+            eyeDesc: "عمليات المياه البيضاء والزرقاء وتصحيح الإبصار بأحدث التقنيات.",
+            physical: "مركز علاج طبيعي كامل",
+            physicalDesc: "تأهيل حركي وعلاج طبيعي بأجهزة حديثة لجميع الأعمار.",
+            icu: "وحدة عناية مركزة",
+            icuDesc: "غرف عناية مركزة مجهزة بالكامل لاستقبال الحالات الحرجة.",
+            dialysis: "مركز غسيل كلوي",
+            dialysisDesc: "وحدات غسيل كلوي متطورة لتقديم الخدمة بشكل مستمر للمرضى."
           }
         }
       },
@@ -121,6 +147,7 @@ i18n
             home: "Home",
             impact: "Impact",
             about: "About Us",
+            projects: "Medical Projects",
             contact: "Contact",
             open: "Open Menu",
             close: "Close Menu"
@@ -143,12 +170,23 @@ i18n
             description: "Official foundation registered with the Egyptian Ministry of Social Solidarity under No. 1784 of 2007. We adhere to the highest standards of transparency."
           },
           about: {
-            title: "About Us",
-            mission: "Our Mission",
-            missionText: "We strive to provide comprehensive support to the most needy groups through sustainable food, medical, and social programs.",
-            history: "Our History",
-            historyText: "Abad Al-Rahman Foundation was established in 2007 as an official entity registered under No. 1784, and since then we have been serving the community with sincerity and transparency.",
+            title: "Who Are We?",
+            mission: "Our Vision",
+            missionText: "We strive to be the premier model in providing free medical services with global quality, transforming donations into sustainable charity for future generations.",
+            history: "Our Goals",
+            historyText: "Providing free medical services, sustaining the Al-Namrouth kitchen for thousands of families, orphan sponsorship, and village development.",
             altEvent: "Foundation Event"
+          },
+          activities: {
+            title: "Our Activities & Impact",
+            kitchen: "Al-Namrouth Charity Kitchen",
+            kitchenDesc: "25,000 meals cooked throughout Ramadan and distributed directly to the needy. (8 years of continuous goodness)",
+            pharmacy: "Charity Pharmacy",
+            pharmacyDesc: "Dispensing free treatments year-round. Medicine is a right for every needy person (50,000 EGP monthly).",
+            medical: "Existing Medical Complex",
+            medicalDesc: "10 years of excellence. Comprehensive free healthcare including incubators, surgery, and 13+ clinics.",
+            aid: "Monthly & General Aid",
+            aidDesc: "Supporting over 250 families (200,000 EGP monthly), providing medical equipment, and urgent living support."
           },
           volunteer: {
             title: "Team Al-Namrouth",
@@ -217,6 +255,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "All rights reserved."
+          },
+          projects: {
+            title: "Upcoming Medical Projects",
+            subtitle: "Working to establish specialized medical centers to serve the community (Under Construction)",
+            radiology: "Integrated Radiology Center",
+            radiologyDesc: "Providing the latest diagnostic radiology equipment to serve patients for free or at nominal prices.",
+            eye: "Eye Surgery Center",
+            eyeDesc: "Cataract and glaucoma surgeries, and vision correction using the latest technologies.",
+            physical: "Complete Physical Therapy Center",
+            physicalDesc: "Motor rehabilitation and physical therapy with modern equipment for all ages.",
+            icu: "Intensive Care Unit",
+            icuDesc: "Fully equipped intensive care rooms to receive critical cases.",
+            dialysis: "Kidney Dialysis Center",
+            dialysisDesc: "Advanced kidney dialysis units to provide continuous service to patients."
           }
         }
       },
@@ -224,7 +276,7 @@ i18n
         translation: {
           title: "Abad Al-Rahman Stiftung",
           subtitle: "Nachhaltige humanitäre Wirkung.. Aufbau der Zukunft",
-          nav: { home: "Startseite", impact: "Einfluss", about: "Über uns", contact: "Kontakt", open: "Menü öffnen", close: "Menü schließen" },
+          nav: { home: "Startseite", impact: "Einfluss", about: "Über uns", projects: "Medizinische Projekte", contact: "Kontakt", open: "Menü öffnen", close: "Menü schließen" },
           hero: { 
             title: "Wir verändern das Leben der Menschen", 
             description: "Eingetragene NGO Nr. 1784 von 2007, die sich für die Stärkung der Gemeinschaft durch medizinische, Ernährungs- und soziale Unterstützung einsetzt.",
@@ -261,6 +313,17 @@ i18n
             history: "Unsere Geschichte",
             historyText: "Die Abad Al-Rahman Stiftung wurde 2007 als offizielle Einheit unter der Nr. 1784 gegründet und dient seitdem der Gemeinschaft mit Aufrichtigkeit und Transparenz.",
             altEvent: "Stiftungsveranstaltung"
+          },
+          activities: {
+            title: "Unsere Aktivitäten & Auswirkungen",
+            kitchen: "Al-Namrouth Wohltätigkeitsküche",
+            kitchenDesc: "25.000 Mahlzeiten, die während des Ramadan gekocht und direkt an Bedürftige verteilt werden. (8 Jahre kontinuierliche Güte)",
+            pharmacy: "Wohltätigkeitsapotheke",
+            pharmacyDesc: "Ganzjährige Ausgabe kostenloser Behandlungen. Medizin ist ein Recht für jeden Bedürftigen (50.000 EGP monatlich).",
+            medical: "Bestehender Medizinischer Komplex",
+            medicalDesc: "10 Jahre Exzellenz. Umfassende kostenlose Gesundheitsversorgung, einschließlich Inkubatoren, Chirurgie und über 13 Kliniken.",
+            aid: "Monatliche & Allgemeine Hilfe",
+            aidDesc: "Unterstützung von über 250 Familien (200.000 EGP monatlich), Bereitstellung medizinischer Geräte und dringender Lebenshilfe."
           },
           volunteer: { 
             title: "Team Al-Namrouth",
@@ -300,6 +363,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "Alle Rechte vorbehalten."
+          },
+          projects: {
+            title: "Zukünftige Medizinische Projekte",
+            subtitle: "Arbeit an der Einrichtung spezialisierter medizinischer Zentren (Im Bau)",
+            radiology: "Integriertes Radiologiezentrum",
+            radiologyDesc: "Bereitstellung modernster diagnostischer Radiologiegeräte für Patienten.",
+            eye: "Augenchirurgiezentrum",
+            eyeDesc: "Katarakt- und Glaukomoperationen sowie Sehkorrekturen.",
+            physical: "Zentrum für Physiotherapie",
+            physicalDesc: "Motorische Rehabilitation und Physiotherapie mit modernen Geräten.",
+            icu: "Intensivstation",
+            icuDesc: "Voll ausgestattete Intensivstationen für kritische Fälle.",
+            dialysis: "Dialysezentrum",
+            dialysisDesc: "Moderne Dialyseeinheiten für die kontinuierliche Versorgung von Patienten."
           }
         }
       },
@@ -307,7 +384,7 @@ i18n
         translation: {
           title: "Fondation Abad Al-Rahman",
           subtitle: "Impact humanitaire durable.. Construire l'avenir",
-          nav: { home: "Accueil", impact: "Impact", about: "À propos", contact: "Contact", open: "Ouvrir le menu", close: "Fermer le menu" },
+          nav: { home: "Accueil", impact: "Impact", about: "À propos", projects: "Projets Médicaux", contact: "Contact", open: "Ouvrir le menu", close: "Fermer le menu" },
           hero: { 
             title: "Faire une différence dans la vie des gens", 
             description: "ONG enregistrée n° 1784 de 2007, travaillant à l'autonomisation de la communauté par un soutien médical, alimentaire et social.",
@@ -344,6 +421,17 @@ i18n
             history: "Notre histoire",
             historyText: "La Fondation Abad Al-Rahman a été créée en 2007 en tant qu'entité officielle enregistrée sous le n° 1784, et depuis lors, nous servons la communauté avec sincérité et transparence.",
             altEvent: "Événement de la fondation"
+          },
+          activities: {
+            title: "Nos Activités et Impact",
+            kitchen: "Cuisine Caritative Al-Namrouth",
+            kitchenDesc: "25 000 repas cuisinés tout au long du Ramadan et distribués directement aux nécessiteux. (8 ans de bonté continue)",
+            pharmacy: "Pharmacie Caritative",
+            pharmacyDesc: "Distribution de traitements gratuits toute l'année. La médecine est un droit pour chaque personne dans le besoin (50 000 EGP par mois).",
+            medical: "Complexe Médical Existant",
+            medicalDesc: "10 ans d'excellence. Soins de santé gratuits complets, y compris couveuses, chirurgie et plus de 13 cliniques.",
+            aid: "Aide Mensuelle et Générale",
+            aidDesc: "Soutien à plus de 250 familles (200 000 EGP par mois), fourniture d'équipements médicaux et aide d'urgence à la vie."
           },
           volunteer: { 
             title: "Équipe Al-Namrouth",
@@ -383,6 +471,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "Tous droits réservés."
+          },
+          projects: {
+            title: "Projets Médicaux à Venir",
+            subtitle: "Travailler à l'établissement de centres médicaux spécialisés (En construction)",
+            radiology: "Centre de Radiologie Intégré",
+            radiologyDesc: "Fournir les derniers équipements de radiologie diagnostique.",
+            eye: "Centre de Chirurgie Oculaire",
+            eyeDesc: "Chirurgie de la cataracte et du glaucome, et correction de la vision.",
+            physical: "Centre de Physiothérapie Complet",
+            physicalDesc: "Rééducation motrice et physiothérapie avec des équipements modernes.",
+            icu: "Unité de Soins Intensifs",
+            icuDesc: "Chambres de soins intensifs entièrement équipées pour les cas critiques.",
+            dialysis: "Centre de Dialyse",
+            dialysisDesc: "Unités de dialyse avancées pour fournir un service continu."
           }
         }
       },
@@ -390,7 +492,7 @@ i18n
         translation: {
           title: "Fundación Abad Al-Rahman",
           subtitle: "Impacto humanitario duradero.. Construyendo el futuro",
-          nav: { home: "Inicio", impact: "Impacto", about: "Nosotros", contact: "Contacto", open: "Abrir menú", close: "Cerrar menú" },
+          nav: { home: "Inicio", impact: "Impacto", about: "Nosotros", projects: "Proyectos Médicos", contact: "Contacto", open: "Abrir menú", close: "Cerrar menú" },
           hero: { 
             title: "Marcando la diferencia en la vida de las personas", 
             description: "ONG registrada nº 1784 de 2007, que trabaja para empoderar a la comunidad mediante apoyo médico, alimentario y social.",
@@ -427,6 +529,17 @@ i18n
             history: "Nuestra historia",
             historyText: "La Fundación Abad Al-Rahman se estableció en 2007 como una entidad oficial registrada bajo el No. 1784, y desde entonces hemos estado sirviendo a la comunidad con sinceridad y transparencia.",
             altEvent: "Evento de la fundación"
+          },
+          activities: {
+            title: "Nuestras Actividades e Impacto",
+            kitchen: "Cocina Benéfica Al-Namrouth",
+            kitchenDesc: "25.000 comidas cocinadas durante el Ramadán y distribuidas directamente a los necesitados. (8 años de bondad continua)",
+            pharmacy: "Farmacia Benéfica",
+            pharmacyDesc: "Dispensación de tratamientos gratuitos durante todo el año. La medicina es un derecho para cada persona necesitada (50.000 EGP mensuales).",
+            medical: "Complejo Médico Existente",
+            medicalDesc: "10 años de excelencia. Atención médica gratuita integral que incluye incubadoras, cirugía y más de 13 clínicas.",
+            aid: "Ayuda Mensual y General",
+            aidDesc: "Apoyo a más de 250 familias (200.000 EGP mensuales), suministro de equipos médicos y apoyo urgente para la vida."
           },
           volunteer: { 
             title: "Equipo Al-Namrouth",
@@ -466,6 +579,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "Todos los derechos reservados."
+          },
+          projects: {
+            title: "Próximos Proyectos Médicos",
+            subtitle: "Trabajando para establecer centros médicos especializados (En construcción)",
+            radiology: "Centro de Radiología Integrado",
+            radiologyDesc: "Proporcionar los últimos equipos de radiología de diagnóstico.",
+            eye: "Centro de Cirugía Ocular",
+            eyeDesc: "Cirugías de cataratas y glaucoma, y corrección de la visión.",
+            physical: "Centro Integral de Fisioterapia",
+            physicalDesc: "Rehabilitación motora y fisioterapia con equipamiento moderno.",
+            icu: "Unidad de Cuidados Intensivos",
+            icuDesc: "Salas de cuidados intensivos totalmente equipadas para casos críticos.",
+            dialysis: "Centro de Diálisis",
+            dialysisDesc: "Unidades avanzadas de diálisis para brindar servicio continuo."
           }
         }
       },
@@ -473,7 +600,7 @@ i18n
         translation: {
           title: "Yayasan Abad Al-Rahman",
           subtitle: "Dampak Kemanusiaan Berkelanjutan.. Membangun Masa Depan",
-          nav: { home: "Beranda", impact: "Dampak", about: "Tentang Kami", contact: "Kontak", open: "Buka Menu", close: "Tutup Menu" },
+          nav: { home: "Beranda", impact: "Dampak", about: "Tentang Kami", projects: "Proyek Medis", contact: "Kontak", open: "Buka Menu", close: "Tutup Menu" },
           hero: { 
             title: "Membuat Perbedaan dalam Hidup Orang Lain", 
             description: "LSM Terdaftar No. 1784 tahun 2007, bekerja untuk memberdayakan masyarakat melalui dukungan medis, pangan, dan sosial.",
@@ -510,6 +637,17 @@ i18n
             history: "Sejarah Kami",
             historyText: "Yayasan Abad Al-Rahman didirikan pada tahun 2007 sebagai entitas resmi yang terdaftar dengan No. 1784, dan sejak saat itu kami telah melayani masyarakat dengan tulus dan transparan.",
             altEvent: "Acara Yayasan"
+          },
+          activities: {
+            title: "Aktivitas & Dampak Kami",
+            kitchen: "Dapur Amal Al-Namrouth",
+            kitchenDesc: "25.000 makanan dimasak selama Ramadhan dan dibagikan langsung kepada yang membutuhkan. (8 tahun kebaikan yang berkelanjutan)",
+            pharmacy: "Apotek Amal",
+            pharmacyDesc: "Membagikan perawatan gratis sepanjang tahun. Obat adalah hak bagi setiap orang yang membutuhkan (50.000 EGP per bulan).",
+            medical: "Kompleks Medis Saat Ini",
+            medicalDesc: "10 tahun keunggulan. Perawatan kesehatan gratis yang komprehensif termasuk inkubator, operasi, dan 13+ klinik.",
+            aid: "Bantuan Bulanan & Umum",
+            aidDesc: "Mendukung lebih dari 250 keluarga (200.000 EGP per bulan), menyediakan peralatan medis, dan dukungan hidup yang mendesak."
           },
           volunteer: { 
             title: "Tim Al-Namrouth",
@@ -549,6 +687,20 @@ i18n
           footer: {
             copy: "© 2026",
             rights: "Hak cipta dilindungi undang-undang."
+          },
+          projects: {
+            title: "Proyek Medis Mendatang",
+            subtitle: "Bekerja untuk membangun pusat medis khusus (Sedang Dibangun)",
+            radiology: "Pusat Radiologi Terpadu",
+            radiologyDesc: "Menyediakan peralatan radiologi diagnostik terbaru.",
+            eye: "Pusat Bedah Mata",
+            eyeDesc: "Operasi katarak dan glaukoma, serta koreksi penglihatan.",
+            physical: "Pusat Terapi Fisik Lengkap",
+            physicalDesc: "Rehabilitasi motorik dan terapi fisik dengan peralatan modern.",
+            icu: "Unit Perawatan Intensif",
+            icuDesc: "Ruang perawatan intensif yang dilengkapi sepenuhnya untuk kasus kritis.",
+            dialysis: "Pusat Dialisis",
+            dialysisDesc: "Unit dialisis tingkat lanjut untuk memberikan layanan berkelanjutan."
           }
         }
       }
