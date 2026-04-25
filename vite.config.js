@@ -13,7 +13,8 @@ export default defineConfig({
         name: 'Abad Al-Rahman Foundation',
         short_name: 'Abad Al-Rahman',
         description: 'Global portal for Abad Al-Rahman Charitable Foundation',
-        theme_color: '#2d5a4c',
+        theme_color: '#ffffff',
+        background_color: '#ffffff',
         icons: [
           {
             src: 'pwa-192x192.png',
