@@ -6,11 +6,11 @@ const LanguageSwitcher = () => {
 
   const languages = [
     { code: 'ar', label: 'العربية', dir: 'rtl' },
-    { code: 'en', label: 'EN', dir: 'ltr' },
-    { code: 'de', label: 'DE', dir: 'ltr' },
-    { code: 'fr', label: 'FR', dir: 'ltr' },
-    { code: 'es', label: 'ES', dir: 'ltr' },
-    { code: 'id', label: 'ID', dir: 'ltr' }
+    { code: 'en', label: 'English', dir: 'ltr' },
+    { code: 'de', label: 'Deutsch', dir: 'ltr' },
+    { code: 'fr', label: 'Français', dir: 'ltr' },
+    { code: 'es', label: 'Español', dir: 'ltr' },
+    { code: 'id', label: 'Bahasa Indonesia', dir: 'ltr' }
   ];
 
   const changeLanguage = (lng, dir) => {
