@@ -1,0 +1,27 @@
+:root {
+  /* Brand Colors (OKLCH) */
+  --color-primary: oklch(45% 0.12 150);
+  --color-primary-light: oklch(55% 0.1 150);
+  --color-accent: oklch(80% 0.1 85);
+  
+  /* Neutrals */
+  --color-bg: oklch(98% 0.005 150);
+  --color-text: oklch(20% 0.005 150);
+  --color-text-muted: oklch(45% 0.005 150);
+  
+  /* Spacing Rhythm (Logical) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='dark'] {
+  --color-bg: oklch(15% 0.005 150);
+  --color-text: oklch(95% 0.005 150);
+  --color-text-muted: oklch(75% 0.005 150);
+}
