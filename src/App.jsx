@@ -2,26 +2,42 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ImpactSection from './components/ImpactSection';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import TrustGallery from './components/TrustGallery';
+import AboutSection from './components/AboutSection';
+import VolunteerSection from './components/VolunteerSection';
+import ContactSection from './components/ContactSection';
+import DonationModal from './components/DonationModal';
 
 // Navbar Component with Mobile Toggle
 const Navbar = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollTo = (e, id) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="container nav-content">
-        <div className="logo">{t('title')}</div>
+        <div className="logo" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} style={{cursor: 'pointer'}}>
+          {t('title')}
+        </div>
         
-        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? t('nav.close') : t('nav.open')}>
           {isOpen ? '✕' : '☰'}
         </button>
 
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-          <a href="#" onClick={() => setIsOpen(false)}>{t('nav.home')}</a>
-          <a href="#" onClick={() => setIsOpen(false)}>{t('nav.impact')}</a>
-          <a href="#" onClick={() => setIsOpen(false)}>{t('nav.about')}</a>
-          <a href="#" onClick={() => setIsOpen(false)}>{t('nav.contact')}</a>
+          <a href="#home" onClick={(e) => scrollTo(e, 'home')}>{t('nav.home')}</a>
+          <a href="#impact" onClick={(e) => scrollTo(e, 'impact')}>{t('nav.impact')}</a>
+          <a href="#about" onClick={(e) => scrollTo(e, 'about')}>{t('nav.about')}</a>
+          <a href="#contact" onClick={(e) => scrollTo(e, 'contact')}>{t('nav.contact')}</a>
           <LanguageSwitcher />
         </div>
       </div>
@@ -30,15 +46,15 @@ const Navbar = () => {
 };
 
 // Hero Component
-const Hero = () => {
+const Hero = ({ onOpenDonation }) => {
   const { t } = useTranslation();
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="container hero-content">
         <h1>{t('hero.title')}</h1>
         <p>{t('hero.description')}</p>
         <div className="hero-actions">
-          <button className="btn-primary">دعمنا الآن | Support Us</button>
+          <button className="btn-primary" onClick={onOpenDonation}>{t('hero.supportBtn')}</button>
         </div>
       </div>
     </section>
@@ -46,7 +62,8 @@ const Hero = () => {
 };
 
 function App() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [isDonationOpen, setIsDonationOpen] = useState(false);
 
   useEffect(() => {
     // Set initial direction
@@ -59,14 +76,25 @@ function App() {
     <div className="app-container">
       <Navbar />
       <main>
-        <Hero />
-        <ImpactSection />
+        <Hero onOpenDonation={() => setIsDonationOpen(true)} />
+        <div id="impact">
+          <ImpactSection />
+        </div>
+        <AboutSection />
+        <VolunteerSection />
+        <TrustGallery />
+        <ContactSection />
       </main>
       <footer className="footer">
         <div className="container">
-          <p>© 2026 {i18n.t('title')}. All rights reserved.</p>
+          <p>{t('footer.copy')} {t('title')}. {t('footer.rights')}</p>
         </div>
       </footer>
+      
+      <DonationModal 
+        isOpen={isDonationOpen} 
+        onClose={() => setIsDonationOpen(false)} 
+      />
     </div>
   );
 }

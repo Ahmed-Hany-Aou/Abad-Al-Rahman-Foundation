@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const ImpactCard = ({ icon, value, label }) => (
+const ImpactCard = ({ image, value, label }) => (
   <div className="impact-card">
-    <div className="impact-icon">{icon}</div>
+    <div className="impact-image-container">
+      <img src={image} alt={label} className="impact-img" />
+    </div>
     <div className="impact-value">{value}</div>
     <div className="impact-label">{label}</div>
   </div>
@@ -13,12 +15,12 @@ const ImpactSection = () => {
   const { t } = useTranslation();
 
   const metrics = [
-    { icon: "🍱", value: "26,525", label: t('metrics.ramadanMeals') },
-    { icon: "🍳", value: "3,250", label: t('metrics.weeklyMeals') },
-    { icon: "📦", value: "300", label: t('metrics.foodBoxes') },
-    { icon: "💰", value: "1,654,944", label: t('metrics.totalAid') },
-    { icon: "👥", value: "874", label: t('metrics.beneficiaries') },
-    { icon: "💊", value: "1,396", label: t('metrics.prescriptions') }
+    { image: "/images/meals-ramadan.jpg", value: t('metrics.ramadanValue'), label: t('metrics.ramadanMeals') },
+    { image: "/images/meals-weekly.jpg", value: t('metrics.weeklyValue'), label: t('metrics.weeklyMeals') },
+    { image: "/images/food-boxes.jpg", value: t('metrics.boxesValue'), label: t('metrics.foodBoxes') },
+    { image: "/images/medical-aid.jpg", value: t('metrics.medicalValue'), label: t('metrics.prescriptions') },
+    { image: "/images/event-beneficiaries.jpg", value: t('metrics.beneficiariesValue'), label: t('metrics.beneficiaries') },
+    { image: "/images/certificate-preview.png", value: t('metrics.totalAidValue'), label: t('metrics.totalAid') }
   ];
 
   return (
