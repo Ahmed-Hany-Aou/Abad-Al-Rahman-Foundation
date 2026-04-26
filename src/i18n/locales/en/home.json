@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "title": "Making a Difference in People's Lives",
+    "description": "Registered NGO No. 1784 of 2007, working to empower the community through medical, food, and social support.",
+    "supportBtn": "Support Us Now"
+  },
+  "metrics": {
+    "categories": {
+      "medical": "Medical Impact",
+      "food": "Food Security",
+      "social": "Social Solidarity",
+      "future": "Our Future Project"
+    },
+    "ramadanMeals": { "label": "Ramadan Meals", "value": 25000, "suffix": "" },
+    "mealCost": { "label": "Meal Cost", "value": 65, "suffix": " EGP" },
+    "villages": { "label": "Villages & Hamlets", "value": 10, "suffix": "+" },
+    "clinics": { "label": "Specialized Clinics", "value": 13, "suffix": "+" },
+    "medicalYears": { "label": "Medical Excellence Years", "value": 10, "suffix": "" },
+    "foodYears": { "label": "Continuous Giving Years", "value": 8, "suffix": "" },
+    "pharmacyCost": { "label": "Pharmacy Monthly Cost", "value": 50000, "suffix": " EGP" },
+    "families": { "label": "Monthly Beneficiaries", "value": 25, "suffix": "+" },
+    "monthlyAid": { "label": "Fixed Monthly Aid", "value": 20000, "suffix": " EGP" },
+    "newArea": { "label": "New Complex Area", "value": 250, "suffix": " m²" },
+    "newFloors": { "label": "New Complex Floors", "value": 6, "suffix": "" },
+    "newUnits": { "label": "Targeted Medical Units", "value": 5, "suffix": "" },
+    "totalAid": { "label": "Total Yearly Aid", "value": 1600000, "suffix": "+" }
+  },
+  "activities": {
+    "title": "Our Activities & Impact",
+    "kitchen": "Al-Namrouth Charity Kitchen",
+    "kitchenDesc": "25,000 meals cooked throughout Ramadan and distributed directly to the needy. (8 years of continuous goodness)",
+    "pharmacy": "Charity Pharmacy",
+    "pharmacyDesc": "Dispensing free treatments year-round. Medicine is a right for every needy person (50,000 EGP monthly).",
+    "medical": "Existing Medical Complex",
+    "medicalDesc": "10 years of excellence. Comprehensive free healthcare including incubators, surgery, and 13+ clinics.",
+    "aid": "Monthly & General Aid",
+    "aidDesc": "Supporting over 250 families (200,000 EGP monthly), providing medical equipment, and urgent living support."
+  }
+}

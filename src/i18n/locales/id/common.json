@@ -1,0 +1,12 @@
+{
+  "title": "Yayasan Abad Al-Rahman",
+  "subtitle": "Dampak Kemanusiaan Berkelanjutan.. Membangun Masa Depan",
+  "nav": { "home": "Beranda", "impact": "Dampak", "about": "Tentang Kami", "projects": "Proyek Medis", "contact": "Kontak", "open": "Buka Menu", "close": "Tutup Menu" },
+  "volunteer": { "title": "Tim Al-Namrouth", "description": "Jadilah bagian dari perubahan. Bergabunglah dengan relawan kami dan bantu berikan senyuman kepada mereka yang membutuhkan.", "cta": "Bergabung Sekarang", "alt": "Relawan Tim Al-Namrouth" },
+  "contact": { "title": "Hubungi Kami", "getInTouch": "Hubungi Kami", "successMsg": "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.", "form": { "name": "Nama", "email": "Email", "message": "Pesan", "send": "Kirim" }, "info": { "address": "Alamat: Kairo, Mesir", "phone": "Telepon: +20 100 000 0000", "email": "Email: info@abad-rahman.org" } },
+  "donation": { "title": "Dukung Kami", "description": "Kontribusi Anda membuat perbedaan nyata. Pilih metode donasi yang sesuai untuk Anda.", "bankDetails": "Detail Rekening Bank", "accountNumber": "Nomor Rekening: 123456789", "bankName": "Bank: National Bank of Egypt", "close": "Tutup" },
+  "trust": { "title": "Kepercayaan & Kredibilitas", "description": "Yayasan resmi terdaftar di Kementerian Solidaritas Sosial Mesir di bawah No. 1784 tahun 2007. Kami menjunjung tinggi standar transparansi tertinggi.", "certTitles": { "ministry": "Penghargaan Kementerian", "reg1": "Dokumen Pendaftaran 1", "reg2": "Dokumen Pendaftaran 2", "appreciation": "Sertifikat Penghargaan" } },
+  "social": { "fb": "FB", "ig": "IG", "tw": "TW" },
+  "footer": { "copy": "© 2026", "rights": "Hak cipta dilindungi undang-undang." },
+  "hero": { "supportBtn": "Dukung Kami Sekarang" }
+}

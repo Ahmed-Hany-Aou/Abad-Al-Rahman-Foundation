@@ -5,7 +5,7 @@ import { CheckCircle2 } from 'lucide-react';
 import { IMAGES } from '../constants/images';
 
 const AboutSection = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('about');
 
   const renderBullets = (text) => {
     if (!text) return null;
@@ -65,29 +65,29 @@ const AboutSection = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="section-title" style={{ color: 'var(--color-primary)', marginBottom: '1.5rem', fontSize: '3rem', fontWeight: '800' }}>
-              {t('about.title')}
+              {t('title')}
             </h2>
             <p style={{ fontSize: '1.25rem', fontWeight: '500', color: 'var(--color-text)', marginBottom: '3rem', lineHeight: '1.6', borderLeft: '4px solid var(--color-accent)', paddingLeft: '1.5rem', opacity: 0.9 }}>
-              {t('about.description')}
+              {t('description')}
             </p>
             
             <div className="mission-box" style={{ marginBottom: '3rem' }}>
               <h3 style={{ fontSize: '1.75rem', color: 'var(--color-accent)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <CheckCircle2 size={28} />
-                {t('about.mission')}
+                {t('mission')}
               </h3>
               <div className="bullets-container">
-                {renderBullets(t('about.missionText'))}
+                {renderBullets(t('missionText'))}
               </div>
             </div>
             
             <div className="history-box">
               <h3 style={{ fontSize: '1.75rem', color: 'var(--color-accent)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <CheckCircle2 size={28} />
-                {t('about.history')}
+                {t('history')}
               </h3>
               <div className="bullets-container">
-                {renderBullets(t('about.historyText'))}
+                {renderBullets(t('historyText'))}
               </div>
             </div>
           </motion.div>
@@ -109,7 +109,7 @@ const AboutSection = () => {
           >
             <img 
               src={IMAGES.aboutVision} 
-              alt={t('about.altEvent')} 
+              alt={t('altEvent')} 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
             <div style={{ 

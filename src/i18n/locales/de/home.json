@@ -1,0 +1,30 @@
+{
+  "hero": { "title": "Wir verändern das Leben der Menschen", "description": "Eingetragene NGO Nr. 1784 von 2007, die sich für die Stärkung der Gemeinschaft durch medizinische, Ernährungs- und soziale Unterstützung einsetzt.", "supportBtn": "Jetzt unterstützen" },
+  "metrics": {
+    "categories": { "medical": "Medizinische Wirkung", "food": "Ernährungssicherheit", "social": "Soziale Solidarität", "future": "Unser Zukunftsprojekt" },
+    "ramadanMeals": { "label": "Ramadan-Mahlzeiten", "value": 25000, "suffix": "" },
+    "mealCost": { "label": "Kosten pro Mahlzeit", "value": 65, "suffix": " EGP" },
+    "villages": { "label": "Dörfer & Weiler", "value": 10, "suffix": "+" },
+    "clinics": { "label": "Spezialisierte Kliniken", "value": 13, "suffix": "+" },
+    "medicalYears": { "label": "Jahre medizinische Exzellenz", "value": 10, "suffix": "" },
+    "foodYears": { "label": "Jahre kontinuierliche Hilfe", "value": 8, "suffix": "" },
+    "pharmacyCost": { "label": "Monatliche Kosten Apotheke", "value": 50000, "suffix": " EGP" },
+    "families": { "label": "Monatliche Begünstigte", "value": 25, "suffix": "+" },
+    "monthlyAid": { "label": "Feste monatliche Hilfe", "value": 20000, "suffix": " EGP" },
+    "newArea": { "label": "Fläche des neuen Komplexes", "value": 250, "suffix": " m²" },
+    "newFloors": { "label": "Stockwerke des neuen Komplexes", "value": 6, "suffix": "" },
+    "newUnits": { "label": "Geplante medizinische Einheiten", "value": 5, "suffix": "" },
+    "totalAid": { "label": "Gesamte jährliche Hilfe", "value": 1600000, "suffix": "+" }
+  },
+  "activities": {
+    "title": "Unsere Aktivitäten & Auswirkungen",
+    "kitchen": "Al-Namrouth Wohltätigkeitsküche",
+    "kitchenDesc": "25.000 Mahlzeiten, die während des Ramadan gekocht und direkt an Bedürftige verteilt werden. (8 Jahre kontinuierliche Güte)",
+    "pharmacy": "Wohltätigkeitsapotheke",
+    "pharmacyDesc": "Ganzjährige Ausgabe kostenloser Behandlungen. Medizin ist ein Recht für jeden Bedürftigen (50.000 EGP monatlich).",
+    "medical": "Bestehender Medizinischer Komplex",
+    "medicalDesc": "10 Jahre Exzellenz. Umfassende kostenlose Gesundheitsversorgung, einschließlich Inkubatoren, Chirurgie und über 13 Kliniken.",
+    "aid": "Monatliche & Allgemeine Hilfe",
+    "aidDesc": "Unterstützung von über 250 Familien (200.000 EGP monatlich), Bereitstellung medizinischer Geräte und dringender Lebenshilfe."
+  }
+}

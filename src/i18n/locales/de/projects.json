@@ -1,0 +1,14 @@
+{
+  "title": "Zukünftige Medizinische Projekte",
+  "subtitle": "Arbeit an der Einrichtung spezialisierter medizinischer Zentren (Im Bau)",
+  "radiology": "Integriertes Radiologiezentrum",
+  "radiologyDesc": "Bereitstellung modernster diagnostischer Radiologiegeräte für Patienten.",
+  "eye": "Augenchirurgiezentrum",
+  "eyeDesc": "Katarakt- und Glaukomoperationen sowie Sehkorrekturen.",
+  "physical": "Zentrum für Physiotherapie",
+  "physicalDesc": "Motorische Rehabilitation und Physiotherapie mit modernen Geräten.",
+  "icu": "Intensivstation",
+  "icuDesc": "Voll ausgestattete Intensivstationen für kritische Fälle.",
+  "dialysis": "Dialysezentrum",
+  "dialysisDesc": "Moderne Dialyseeinheiten für die kontinuierliche Versorgung von Patienten."
+}

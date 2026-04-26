@@ -1,0 +1,12 @@
+{
+  "title": "Fondation Abad Al-Rahman",
+  "subtitle": "Impact humanitaire durable.. Construire l'avenir",
+  "nav": { "home": "Accueil", "impact": "Impact", "about": "À propos", "projects": "Projets Médicaux", "contact": "Contact", "open": "Ouvrir le menu", "close": "Fermer le menu" },
+  "volunteer": { "title": "Équipe Al-Namrouth", "description": "Faites partie du changement. Rejoignez nos bénévoles et aidez à redonner le sourire à ceux qui en ont besoin.", "cta": "Rejoignez-nous maintenant", "alt": "Bénévoles de l'équipe Al-Namrouth" },
+  "contact": { "title": "Contactez-nous", "getInTouch": "Entrer en contact", "successMsg": "Merci pour votre message ! Nous vous répondrons bientôt.", "form": { "name": "Nom", "email": "Email", "message": "Message", "send": "Envoyer" }, "info": { "address": "Adresse : Le Caire, Égypte", "phone": "Téléphone : +20 100 000 0000", "email": "Email : info@abad-rahman.org" } },
+  "donation": { "title": "Soutenez-nous", "description": "Votre contribution fait une réelle différence. Choisissez la méthode de don qui vous convient.", "bankDetails": "Coordonnées bancaires", "accountNumber": "Numéro de compte : 123456789", "bankName": "Banque : National Bank of Egypt", "close": "Fermer" },
+  "trust": { "title": "Confiance et Crédibilité", "description": "Fondation officielle enregistrée auprès du ministère égyptien de la Solidarité sociale sous le n° 1784 de 2007. Nous adhérons aux normes de transparence les plus élevées.", "certTitles": { "ministry": "Appréciation du ministère", "reg1": "Document d'enregistrement 1", "reg2": "Document d'enregistrement 2", "appreciation": "Certificat d'appréciation" } },
+  "social": { "fb": "FB", "ig": "IG", "tw": "TW" },
+  "footer": { "copy": "© 2026", "rights": "Tous droits réservés." },
+  "hero": { "supportBtn": "Soutenez-nous maintenant" }
+}

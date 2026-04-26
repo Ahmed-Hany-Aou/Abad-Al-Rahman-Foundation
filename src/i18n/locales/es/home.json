@@ -1,0 +1,30 @@
+{
+  "hero": { "title": "Marcando la diferencia en la vida de las personas", "description": "ONG registrada nº 1784 de 2007, que trabaja para empoderar a la comunidad mediante apoyo médico, alimentario y social.", "supportBtn": "Apóyanos ahora" },
+  "metrics": {
+    "categories": { "medical": "Impacto Médico", "food": "Seguridad Alimentaria", "social": "Solidaridad Social", "future": "Nuestro Proyecto Futuro" },
+    "ramadanMeals": { "label": "Comidas de Ramadán", "value": 25000, "suffix": "" },
+    "mealCost": { "label": "Costo por comida", "value": 65, "suffix": " EGP" },
+    "villages": { "label": "Pueblos y Caseríos", "value": 10, "suffix": "+" },
+    "clinics": { "label": "Clínicas Especializadas", "value": 13, "suffix": "+" },
+    "medicalYears": { "label": "Años de Excelencia Médica", "value": 10, "suffix": "" },
+    "foodYears": { "label": "Años de Donación Continua", "value": 8, "suffix": "" },
+    "pharmacyCost": { "label": "Costo mensual farmacia", "value": 50000, "suffix": " EGP" },
+    "families": { "label": "Beneficiarios Mensuales", "value": 25, "suffix": "+" },
+    "monthlyAid": { "label": "Ayuda mensual fija", "value": 20000, "suffix": " EGP" },
+    "newArea": { "label": "Superficie del nuevo complejo", "value": 250, "suffix": " m²" },
+    "newFloors": { "label": "Pisos del nuevo complejo", "value": 6, "suffix": "" },
+    "newUnits": { "label": "Unidades médicas previstas", "value": 5, "suffix": "" },
+    "totalAid": { "label": "Ayuda anual total", "value": 1600000, "suffix": "+" }
+  },
+  "activities": {
+    "title": "Nuestras Actividades e Impacto",
+    "kitchen": "Cocina Benéfica Al-Namrouth",
+    "kitchenDesc": "25.000 comidas cocinadas durante el Ramadán y distribuidas directamente a los necesitados. (8 años de bondad continua)",
+    "pharmacy": "Farmacia Benéfica",
+    "pharmacyDesc": "Dispensación de tratamientos gratuitos durante todo el año. La medicina es un derecho para cada persona necesitada (50.000 EGP mensuales).",
+    "medical": "Complexe Médical Existant",
+    "medicalDesc": "10 años de excelencia. Atención médica gratuita integral que incluye incubadoras, cirugía y más de 13 clínicas.",
+    "aid": "Ayuda Mensual y General",
+    "aidDesc": "Apoyo a más de 250 familias (200.000 EGP mensuales), suministro de equipos médicos y apoyo urgente para la vida."
+  }
+}

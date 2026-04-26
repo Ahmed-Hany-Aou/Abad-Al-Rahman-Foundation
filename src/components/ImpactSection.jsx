@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { IMAGES } from '../constants/images';
 
 const ImpactSection = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('home');
 
   const activities = [
     {

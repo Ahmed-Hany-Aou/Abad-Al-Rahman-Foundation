@@ -5,38 +5,38 @@ import { Activity, Eye, Bone, HeartPulse, Droplets } from 'lucide-react';
 import { IMAGES } from '../constants/images';
 
 const MedicalProjects = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('projects');
 
   const projects = [
     {
       id: 'radiology',
       icon: <Activity size={32} />,
-      titleKey: 'projects.radiology',
-      descKey: 'projects.radiologyDesc',
+      titleKey: 'radiology',
+      descKey: 'radiologyDesc',
     },
     {
       id: 'eye',
       icon: <Eye size={32} />,
-      titleKey: 'projects.eye',
-      descKey: 'projects.eyeDesc',
+      titleKey: 'eye',
+      descKey: 'eyeDesc',
     },
     {
       id: 'physical',
       icon: <Bone size={32} />,
-      titleKey: 'projects.physical',
-      descKey: 'projects.physicalDesc',
+      titleKey: 'physical',
+      descKey: 'physicalDesc',
     },
     {
       id: 'icu',
       icon: <HeartPulse size={32} />,
-      titleKey: 'projects.icu',
-      descKey: 'projects.icuDesc',
+      titleKey: 'icu',
+      descKey: 'icuDesc',
     },
     {
       id: 'dialysis',
       icon: <Droplets size={32} />,
-      titleKey: 'projects.dialysis',
-      descKey: 'projects.dialysisDesc',
+      titleKey: 'dialysis',
+      descKey: 'dialysisDesc',
     }
   ];
 
@@ -60,8 +60,8 @@ const MedicalProjects = () => {
     >
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">{t('projects.title')}</h2>
-          <p className="section-subtitle">{t('projects.subtitle')}</p>
+          <h2 className="section-title">{t('title')}</h2>
+          <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
         <motion.div 

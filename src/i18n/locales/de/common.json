@@ -1,0 +1,12 @@
+{
+  "title": "Abad Al-Rahman Stiftung",
+  "subtitle": "Nachhaltige humanitäre Wirkung.. Aufbau der Zukunft",
+  "nav": { "home": "Startseite", "impact": "Einfluss", "about": "Über uns", "projects": "Medizinische Projekte", "contact": "Kontakt", "open": "Menü öffnen", "close": "Menü schließen" },
+  "volunteer": { "title": "Team Al-Namrouth", "description": "Seien Sie Teil des Wandels. Schließen Sie sich unseren Freiwilligen an und helfen Sie dabei, den Bedürftigen ein Lächeln ins Gesicht zu zaubern.", "cta": "Jetzt beitreten", "alt": "Freiwillige des Teams Al-Namrouth" },
+  "contact": { "title": "Kontakt", "getInTouch": "Kontaktieren Sie uns", "successMsg": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.", "form": { "name": "Name", "email": "E-Mail", "message": "Nachricht", "send": "Senden" }, "info": { "address": "Adresse: Kairo, Ägypten", "phone": "Telefon: +20 100 000 0000", "email": "E-Mail: info@abad-rahman.org" } },
+  "donation": { "title": "Unterstützen Sie uns", "description": "Ihr Beitrag macht einen echten Unterschied. Wählen Sie die für Sie passende Spendenmethode.", "bankDetails": "Bankverbindung", "accountNumber": "Kontonummer: 123456789", "bankName": "Bank: National Bank of Egypt", "close": "Schließen" },
+  "trust": { "title": "Vertrauen & Glaubwürdigkeit", "description": "Offizielle Stiftung, registriert beim ägyptischen Ministerium für soziale Solidarität unter der Nr. 1784 von 2007. Wir verpflichten uns zu höchster Transparenz.", "certTitles": { "ministry": "Anerkennung des Ministeriums", "reg1": "Registrierungsdokument 1", "reg2": "Registrierungsdokument 2", "appreciation": "Anerkennungsurkunde" } },
+  "social": { "fb": "FB", "ig": "IG", "tw": "TW" },
+  "footer": { "copy": "© 2026", "rights": "Alle Rechte vorbehalten." },
+  "hero": { "supportBtn": "Jetzt unterstützen" }
+}

@@ -1,0 +1,30 @@
+{
+  "hero": { "title": "Faire une différence dans la vie des gens", "description": "ONG enregistrée n° 1784 de 2007, travaillant à l'autonomisation de la communauté par un soutien médical, alimentaire et social.", "supportBtn": "Soutenez-nous maintenant" },
+  "metrics": {
+    "categories": { "medical": "Impact Médical", "food": "Sécurité Alimentaire", "social": "Solidarité Sociale", "future": "Notre Projet Futur" },
+    "ramadanMeals": { "label": "Repas du Ramadan", "value": 25000, "suffix": "" },
+    "mealCost": { "label": "Coût par repas", "value": 65, "suffix": " EGP" },
+    "villages": { "label": "Villages et Hameaux", "value": 10, "suffix": "+" },
+    "clinics": { "label": "Cliniques Spécialisées", "value": 13, "suffix": "+" },
+    "medicalYears": { "label": "Années d'Excellence Médicale", "value": 10, "suffix": "" },
+    "foodYears": { "label": "Années de Don Continu", "value": 8, "suffix": "" },
+    "pharmacyCost": { "label": "Coût mensuel pharmacie", "value": 50000, "suffix": " EGP" },
+    "families": { "label": "Bénéficiaires Mensuels", "value": 25, "suffix": "+" },
+    "monthlyAid": { "label": "Aide mensuelle fixe", "value": 20000, "suffix": " EGP" },
+    "newArea": { "label": "Surface du nouveau complexe", "value": 250, "suffix": " m²" },
+    "newFloors": { "label": "Étages du nouveau complexe", "value": 6, "suffix": "" },
+    "newUnits": { "label": "Unités médicales ciblées", "value": 5, "suffix": "" },
+    "totalAid": { "label": "Aide annuelle totale", "value": 1600000, "suffix": "+" }
+  },
+  "activities": {
+    "title": "Nos Activités et Impact",
+    "kitchen": "Cuisine Caritative Al-Namrouth",
+    "kitchenDesc": "25 000 repas cuisinés tout au long du Ramadan et distribués directement aux nécessiteux. (8 ans de bonté continue)",
+    "pharmacy": "Pharmacie Caritative",
+    "pharmacyDesc": "Distribution de traitements gratuits toute l'année. La médecine est un droit pour chaque personne dans le besoin (50 000 EGP par mois).",
+    "medical": "Complexe Médical Existant",
+    "medicalDesc": "10 ans d'excellence. Soins de santé gratuits complets, y compris couveuses, chirurgie et plus de 13 cliniques.",
+    "aid": "Aide Mensuelle et Générale",
+    "aidDesc": "Soutien à plus de 250 familles (200 000 EGP par mois), fourniture d'équipements médicaux et aide d'urgence à la vie."
+  }
+}

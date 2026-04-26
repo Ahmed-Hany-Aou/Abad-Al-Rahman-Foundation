@@ -1,0 +1,14 @@
+{
+  "title": "Proyek Medis Mendatang",
+  "subtitle": "Bekerja untuk membangun pusat medis khusus (Sedang Dibangun)",
+  "radiology": "Pusat Radiologi Terpadu",
+  "radiologyDesc": "Menyediakan peralatan radiologi diagnostik terbaru.",
+  "eye": "Pusat Bedah Mata",
+  "eyeDesc": "Operasi katarak dan glaukoma, serta koreksi penglihatan.",
+  "physical": "Pusat Terapi Fisik Lengkap",
+  "physicalDesc": "Rehabilitasi motorik dan terapi fisik dengan peralatan modern.",
+  "icu": "Unit Perawatan Intensif",
+  "icuDesc": "Ruang perawatan intensif yang dilengkapi sepenuhnya untuk kasus kritis.",
+  "dialysis": "Pusat Dialisis",
+  "dialysisDesc": "Unit dialisis tingkat lanjut untuk memberikan layanan berkelanjutan."
+}

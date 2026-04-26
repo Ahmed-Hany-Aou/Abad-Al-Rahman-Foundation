@@ -28,7 +28,7 @@ const Counter = ({ value, suffix = '' }) => {
 };
 
 const Hero = ({ onOpenDonation }) => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(['home', 'common']);
 
   const metricsGroups = [
     {

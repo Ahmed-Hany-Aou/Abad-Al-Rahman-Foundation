@@ -1,0 +1,14 @@
+{
+  "title": "Projets Médicaux à Venir",
+  "subtitle": "Travailler à l'établissement de centres médicaux spécialisés (En construction)",
+  "radiology": "Centre de Radiologie Intégré",
+  "radiologyDesc": "Fournir les derniers équipements de radiologie diagnostique.",
+  "eye": "Centre de Chirurgie Oculaire",
+  "eyeDesc": "Chirurgie de la cataracte et du glaucome, et correction de la vision.",
+  "physical": "Centre de Physiothérapie Complet",
+  "physicalDesc": "Rééducation motrice et physiothérapie avec des équipements modernes.",
+  "icu": "Unité de Soins Intensifs",
+  "icuDesc": "Chambres de soins intensifs entièrement équipées pour les cas critiques.",
+  "dialysis": "Centre de Dialyse",
+  "dialysisDesc": "Unités de dialyse avancées pour fournir un service continu."
+}

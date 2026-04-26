@@ -1,0 +1,14 @@
+{
+  "title": "Upcoming Medical Projects",
+  "subtitle": "Working to establish specialized medical centers to serve the community (Under Construction)",
+  "radiology": "Integrated Radiology Center",
+  "radiologyDesc": "Providing the latest diagnostic radiology equipment to serve patients for free or at nominal prices.",
+  "eye": "Eye Surgery Center",
+  "eyeDesc": "Cataract and glaucoma surgeries, and vision correction using the latest technologies.",
+  "physical": "Complete Physical Therapy Center",
+  "physicalDesc": "Motor rehabilitation and physical therapy with modern equipment for all ages.",
+  "icu": "Intensive Care Unit",
+  "icuDesc": "Fully equipped intensive care rooms to receive critical cases.",
+  "dialysis": "Kidney Dialysis Center",
+  "dialysisDesc": "Advanced kidney dialysis units to provide continuous service to patients."
+}

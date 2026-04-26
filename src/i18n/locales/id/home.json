@@ -1,0 +1,30 @@
+{
+  "hero": { "title": "Membuat Perbedaan dalam Hidup Orang Lain", "description": "LSM Terdaftar No. 1784 tahun 2007, bekerja untuk memberdayakan masyarakat melalui dukungan medis, pangan, dan sosial.", "supportBtn": "Dukung Kami Sekarang" },
+  "metrics": {
+    "categories": { "medical": "Dampak Medis", "food": "Ketahanan Pangan", "social": "Solidaritas Sosial", "future": "Proyek Masa Depan Kami" },
+    "ramadanMeals": { "label": "Makanan Ramadhan", "value": 25000, "suffix": "" },
+    "mealCost": { "label": "Biaya per Makanan", "value": 65, "suffix": " EGP" },
+    "villages": { "label": "Desa & Dusun", "value": 10, "suffix": "+" },
+    "clinics": { "label": "Klinik Spesialis", "value": 13, "suffix": "+" },
+    "medicalYears": { "label": "Tahun Keunggulan Medis", "value": 10, "suffix": "" },
+    "foodYears": { "label": "Tahun Pemberian Berkelanjutan", "value": 8, "suffix": "" },
+    "pharmacyCost": { "label": "Biaya Bulanan Apotek", "value": 50000, "suffix": " EGP" },
+    "families": { "label": "Penerima Manfaat Bulanan", "value": 25, "suffix": "+" },
+    "monthlyAid": { "label": "Bantuan Bulanan Tetap", "value": 20000, "suffix": " EGP" },
+    "newArea": { "label": "Luas Kompleks Baru", "value": 250, "suffix": " m²" },
+    "newFloors": { "label": "Lantai Kompleks Baru", "value": 6, "suffix": "" },
+    "newUnits": { "label": "Unit Medis Target", "value": 5, "suffix": "" },
+    "totalAid": { "label": "Total Bantuan Tahunan", "value": 1600000, "suffix": "+" }
+  },
+  "activities": {
+    "title": "Aktivitas & Dampak Kami",
+    "kitchen": "Dapur Amal Al-Namrouth",
+    "kitchenDesc": "25.000 makanan dimasak selama Ramadhan dan dibagikan langsung kepada yang membutuhkan. (8 tahun kebaikan yang berkelanjutan)",
+    "pharmacy": "Apotek Amal",
+    "pharmacyDesc": "Membagikan perawatan gratis sepanjang tahun. Obat adalah hak bagi setiap orang yang membutuhkan (50.000 EGP per bulan).",
+    "medical": "Kompleks Medis Saat Ini",
+    "medicalDesc": "10 tahun keunggulan. Perawatan kesehatan gratis yang komprehensif termasuk inkubator, operasi, dan 13+ klinik.",
+    "aid": "Bantuan Bulanan & Umum",
+    "aidDesc": "Mendukung lebih dari 250 keluarga (200.000 EGP per bulan), menyediakan peralatan medis, dan dukungan hidup yang mendesak."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Próximos Proyectos Médicos",
+  "subtitle": "Trabajando para establecer centros médicos especializados (En construcción)",
+  "radiology": "Centro de Radiología Integrado",
+  "radiologyDesc": "Proporcionar los últimos equipos de radiología de diagnóstico.",
+  "eye": "Centro de Chirugía Ocular",
+  "eyeDesc": "Cirugías de cataratas y glaucoma, y corrección de la visión.",
+  "physical": "Centro Integral de Fisioterapia",
+  "physicalDesc": "Rehabilitación motora y fisioterapia con equipamiento moderno.",
+  "icu": "Unidad de Cuidados Intensivos",
+  "icuDesc": "Salas de cuidados intensivos totalmente equipadas para casos críticos.",
+  "dialysis": "Centro de Diálisis",
+  "dialysisDesc": "Unidades avanzadas de diálisis para brindar servicio continuo."
+}
