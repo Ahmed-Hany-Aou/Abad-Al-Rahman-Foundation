@@ -38,10 +38,11 @@ i18n
           },
           about: {
             title: "من نحن وماذا نريد؟",
+            description: "مؤسسة خيرية غير ربحية تعمل منذ عام ٢٠٠٧ على دعم الفقراء والمساكين وتنمية المجتمعات الريفية من خلال برامج غذائية وطبية وتنموية مستدامة.",
             mission: "رؤيتنا",
-            missionText: "نسعى لنكون النموذج الأول في تقديم الخدمة الطبية المجانية بجودة عالمية، وتحويل التبرعات إلى أصول خيرية تخدم الأجيال.",
+            missionText: "الريادة: أن تكون النموذج الأول في تقديم الخدمة الطبية المجانية بجودة عالمية.\nالشمولية: مجتمع متعاف صحياً ومكتف غذائياً.\nالاستدامة: تحويل التبرعات إلى أصول خيرية دائمة (صدقة جارية تخدم الأجيال).\nالكرامة: تقديم العون لكل محتاج بأعلى معايير التعفف والتقدير.",
             history: "أهدافنا في سطور",
-            historyText: "تقديم خدمات طبية مجانية عبر المجمع الطبي، استدامة مطبخ النمروط ليصل لآلاف الأسر، رعاية الأيتام، وتنمية القرية للنهوض بالخدمات العامة.",
+            historyText: "الرعاية الطبية: تقديم خدمات طبية مجانية وشاملة (عبر المجمع الطبي) لكل محتاج.\nالأمن الغذائي: استدامة إطعام الطعام وتطوير مطبخ النمروط ليصل لآلاف الأسر.\nكفالة الأيتام: رعاية الأسر المتعففة والأيتام مادياً ومعنوياً لضمان حياة كريمة.\nبناء الأثر: إنشاء المجمع الطبي الجديد (٦ طوابق) كصدقة جارية مستدامة.\nتنمية القرية: النهوض بالخدمات العامة في النمروط ودعم زواج غير القادرين.",
             altEvent: "فعالية المؤسسة"
           },
           activities: {
@@ -170,11 +171,12 @@ i18n
             description: "Official foundation registered with the Egyptian Ministry of Social Solidarity under No. 1784 of 2007. We adhere to the highest standards of transparency."
           },
           about: {
-            title: "Who Are We?",
+            title: "Who Are We and What Do We Want?",
+            description: "A non-profit charitable foundation working since 2007 to support the poor and needy, and develop rural communities through sustainable food, medical, and development programs.",
             mission: "Our Vision",
-            missionText: "We strive to be the premier model in providing free medical services with global quality, transforming donations into sustainable charity for future generations.",
+            missionText: "Leadership: To be the premier model in providing free medical services with global quality.\nInclusivity: A healthy society and a self-sufficient food supply.\nSustainability: Transforming donations into permanent charitable assets (ongoing charity serving generations).\nDignity: Providing aid to everyone in need with the highest standards of modesty and appreciation.",
             history: "Our Goals",
-            historyText: "Providing free medical services, sustaining the Al-Namrouth kitchen for thousands of families, orphan sponsorship, and village development.",
+            historyText: "Medical Care: Providing free and comprehensive medical services (via the Medical Complex) to everyone in need.\nFood Security: Sustaining food distribution and developing the \"Al-Namrouth Kitchen\" to reach thousands of families.\nOrphan Sponsorship: Caring for needy families and orphans financially and morally to ensure a decent life.\nBuilding Impact: Establishing the new Medical Complex (6 floors) as a sustainable ongoing charity.\nVillage Development: Advancing public services in Al-Namrouth and supporting the marriage of those in need.",
             altEvent: "Foundation Event"
           },
           activities: {
@@ -277,8 +279,8 @@ i18n
           title: "Abad Al-Rahman Stiftung",
           subtitle: "Nachhaltige humanitäre Wirkung.. Aufbau der Zukunft",
           nav: { home: "Startseite", impact: "Einfluss", about: "Über uns", projects: "Medizinische Projekte", contact: "Kontakt", open: "Menü öffnen", close: "Menü schließen" },
-          hero: { 
-            title: "Wir verändern das Leben der Menschen", 
+          hero: {
+            title: "Wir verändern das Leben der Menschen",
             description: "Eingetragene NGO Nr. 1784 von 2007, die sich für die Stärkung der Gemeinschaft durch medizinische, Ernährungs- und soziale Unterstützung einsetzt.",
             supportBtn: "Jetzt unterstützen"
           },
@@ -306,12 +308,13 @@ i18n
               appreciation: "Anerkennungsurkunde"
             }
           },
-          about: { 
-            title: "Über uns",
-            mission: "Unsere Mission",
-            missionText: "Wir streben danach, den bedürftigsten Gruppen umfassende Unterstützung durch nachhaltige Ernährungs-, medizinische und soziale Programme zu bieten.",
-            history: "Unsere Geschichte",
-            historyText: "Die Abad Al-Rahman Stiftung wurde 2007 als offizielle Einheit unter der Nr. 1784 gegründet und dient seitdem der Gemeinschaft mit Aufrichtigkeit und Transparenz.",
+          about: {
+            title: "Wer sind wir und was wollen wir?",
+            description: "Eine gemeinnützige Wohltätigkeitsstiftung, die seit 2007 die Armen und Bedürftigen unterstützt und ländliche Gemeinschaften durch nachhaltige Ernährungs-, Medizin- und Entwicklungsprogramme entwickelt.",
+            mission: "Unsere Vision",
+            missionText: "Führung: Das führende Modell bei der Bereitstellung kostenloser medizinischer Dienstleistungen mit globaler Qualität zu sein.\nInklusivität: Eine gesunde Gesellschaft und eine autarke Lebensmittelversorgung.\nNachhaltigkeit: Spenden in dauerhafte wohltätige Vermögenswerte umwandeln (fortlaufende Wohltätigkeit für Generationen).\nWürde: Jedem Bedürftigen Hilfe mit höchsten Standards an Bescheidenheit und Wertschätzung bieten.",
+            history: "Unsere Ziele",
+            historyText: "Medizinische Versorgung: Bereitstellung kostenloser und umfassender medizinischer Dienstleistungen (über den medizinischen Komplex) für jeden Bedürftigen.\nErnährungssicherheit: Nachhaltige Lebensmittelverteilung und Entwicklung der „Al-Namrouth-Küche“, um Tausende von Familien zu erreichen.\nWaisenpatenschaft: Finanzielle und moralische Betreuung bedürftiger Familien und Waisen, um ein würdevolles Leben zu gewährleisten.\nWirkung erzielen: Aufbau des neuen medizinischen Komplexes (6 Stockwerke) als nachhaltige, fortlaufende Wohltätigkeit.\nDorfentwicklung: Förderung öffentlicher Dienstleistungen in Al-Namrouth und Unterstützung der Eheschließung von Bedürftigen.",
             altEvent: "Stiftungsveranstaltung"
           },
           activities: {
@@ -325,13 +328,13 @@ i18n
             aid: "Monatliche & Allgemeine Hilfe",
             aidDesc: "Unterstützung von über 250 Familien (200.000 EGP monatlich), Bereitstellung medizinischer Geräte und dringender Lebenshilfe."
           },
-          volunteer: { 
+          volunteer: {
             title: "Team Al-Namrouth",
             description: "Seien Sie Teil des Wandels. Schließen Sie sich unseren Freiwilligen an und helfen Sie dabei, den Bedürftigen ein Lächeln ins Gesicht zu zaubern.",
             cta: "Jetzt beitreten",
             alt: "Freiwillige des Teams Al-Namrouth"
           },
-          contact: { 
+          contact: {
             title: "Kontakt",
             getInTouch: "Kontaktieren Sie uns",
             successMsg: "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
@@ -347,7 +350,7 @@ i18n
               email: "E-Mail: info@abad-rahman.org"
             }
           },
-          donation: { 
+          donation: {
             title: "Unterstützen Sie uns",
             description: "Ihr Beitrag macht einen echten Unterschied. Wählen Sie die für Sie passende Spendenmethode.",
             bankDetails: "Bankverbindung",
@@ -385,8 +388,8 @@ i18n
           title: "Fondation Abad Al-Rahman",
           subtitle: "Impact humanitaire durable.. Construire l'avenir",
           nav: { home: "Accueil", impact: "Impact", about: "À propos", projects: "Projets Médicaux", contact: "Contact", open: "Ouvrir le menu", close: "Fermer le menu" },
-          hero: { 
-            title: "Faire une différence dans la vie des gens", 
+          hero: {
+            title: "Faire une différence dans la vie des gens",
             description: "ONG enregistrée n° 1784 de 2007, travaillant à l'autonomisation de la communauté par un soutien médical, alimentaire et social.",
             supportBtn: "Soutenez-nous maintenant"
           },
@@ -414,12 +417,13 @@ i18n
               appreciation: "Certificat d'appréciation"
             }
           },
-          about: { 
-            title: "À propos de nous",
-            mission: "Notre mission",
-            missionText: "Nous nous efforçons de fournir un soutien complet aux groupes les plus démunis grâce à des programmes alimentaires, médicaux et sociaux durables.",
-            history: "Notre histoire",
-            historyText: "La Fondation Abad Al-Rahman a été créée en 2007 en tant qu'entité officielle enregistrée sous le n° 1784, et depuis lors, nous servons la communauté avec sincérité et transparence.",
+          about: {
+            title: "Qui sommes-nous et que voulons-nous ?",
+            description: "Une fondation caritative à but non lucratif œuvrant depuis 2007 pour soutenir les pauvres et les nécessiteux, et développer les communautés rurales à travers des programmes alimentaires, médicaux et de développement durables.",
+            mission: "Notre vision",
+            missionText: "Leadership: Être le premier modèle de prestation de services médicaux gratuits de qualité mondiale.\nInclusivité: Une société saine et un approvisionnement alimentaire autosuffisant.\nDurabilité: Transformer les dons en actifs caritatifs permanents (charité continue au service des générations).\nDignité: Apporter une aide à toute personne dans le besoin avec les plus hauts standards de modestie et de reconnaissance.",
+            history: "Nos objectifs",
+            historyText: "Soins médicaux: Fournir des services médicaux gratuits et complets (via le complexe médical) à toute personne dans le besoin.\nSécurité alimentaire: Soutenir la distribution alimentaire et développer la « Cuisine Al-Namrouth » pour atteindre des milliers de familles.\nParrainage d'orphelins: Soutenir financièrement et moralement les familles nécessiteuses et les orphelins pour garantir une vie décente.\nConstruire l'impact: Établir le nouveau complexe médical (6 étages) comme une œuvre de charité durable.\nDéveloppement du village: Faire progresser les services publics à Al-Namrouth et soutenir le mariage des personnes démunies.",
             altEvent: "Événement de la fondation"
           },
           activities: {
@@ -433,13 +437,13 @@ i18n
             aid: "Aide Mensuelle et Générale",
             aidDesc: "Soutien à plus de 250 familles (200 000 EGP par mois), fourniture d'équipements médicaux et aide d'urgence à la vie."
           },
-          volunteer: { 
+          volunteer: {
             title: "Équipe Al-Namrouth",
             description: "Faites partie du changement. Rejoignez nos bénévoles et aidez à redonner le sourire à ceux qui en ont besoin.",
             cta: "Rejoignez-nous maintenant",
             alt: "Bénévoles de l'équipe Al-Namrouth"
           },
-          contact: { 
+          contact: {
             title: "Contactez-nous",
             getInTouch: "Entrer en contact",
             successMsg: "Merci pour votre message ! Nous vous répondrons bientôt.",
@@ -455,7 +459,7 @@ i18n
               email: "Email : info@abad-rahman.org"
             }
           },
-          donation: { 
+          donation: {
             title: "Soutenez-nous",
             description: "Votre contribution fait une réelle différence. Choisissez la méthode de don qui vous convient.",
             bankDetails: "Coordonnées bancaires",
@@ -493,8 +497,8 @@ i18n
           title: "Fundación Abad Al-Rahman",
           subtitle: "Impacto humanitario duradero.. Construyendo el futuro",
           nav: { home: "Inicio", impact: "Impacto", about: "Nosotros", projects: "Proyectos Médicos", contact: "Contacto", open: "Abrir menú", close: "Cerrar menú" },
-          hero: { 
-            title: "Marcando la diferencia en la vida de las personas", 
+          hero: {
+            title: "Marcando la diferencia en la vida de las personas",
             description: "ONG registrada nº 1784 de 2007, que trabaja para empoderar a la comunidad mediante apoyo médico, alimentario y social.",
             supportBtn: "Apóyanos ahora"
           },
@@ -522,12 +526,13 @@ i18n
               appreciation: "Certificado de apreciación"
             }
           },
-          about: { 
-            title: "Sobre nosotros",
-            mission: "Nuestra misión",
-            missionText: "Nos esforzamos por brindar un apoyo integral a los grupos más necesitados a través de programas alimentarios, médicos y sociales sostenibles.",
-            history: "Nuestra historia",
-            historyText: "La Fundación Abad Al-Rahman se estableció en 2007 como una entidad oficial registrada bajo el No. 1784, y desde entonces hemos estado sirviendo a la comunidad con sinceridad y transparencia.",
+          about: {
+            title: "¿Quiénes somos y qué queremos?",
+            description: "Una fundación benéfica sin fines de lucro que trabaja desde 2007 para apoyar a los pobres y necesitados, y desarrollar comunidades rurales a través de programas alimentarios, médicos y de desarrollo sostenibles.",
+            mission: "Nuestra visión",
+            missionText: "Liderazgo: Ser el modelo principal en la prestación de servicios médicos gratuitos con calidad global.\nInclusividad: Una sociedad sana y un suministro de alimentos autosuficiente.\nSostenibilidad: Transformar las donaciones en activos caritativos permanentes (caridad continua al servicio de las generaciones).\nDignidad: Brindar ayuda a todos los necesitados con los más altos estándares de modestia y aprecio.",
+            history: "Nuestros objetivos",
+            historyText: "Atención Médica: Brindar servicios médicos gratuitos e integrales (a través del Complejo Médico) a todos los necesitados.\nSeguridad Alimentaria: Mantener la distribución de alimentos y desarrollar la \"Cocina Al-Namrouth\" para llegar a miles de familias.\nPatrocinio de Huérfanos: Cuidar a familias necesitadas y huérfanos financiera y moralmente para asegurar una vida digna.\nCrear Impacto: Establecer el nuevo Complejo Médico (6 pisos) como una caridad continua y sostenible.\nDesarrollo del Pueblo: Impulsar los servicios públicos en Al-Namrouth y apoyar el matrimonio de personas necesitadas.",
             altEvent: "Evento de la fundación"
           },
           activities: {
@@ -541,13 +546,13 @@ i18n
             aid: "Ayuda Mensual y General",
             aidDesc: "Apoyo a más de 250 familias (200.000 EGP mensuales), suministro de equipos médicos y apoyo urgente para la vida."
           },
-          volunteer: { 
+          volunteer: {
             title: "Equipo Al-Namrouth",
             description: "Sé parte del cambio. Únete a nuestros voluntarios y ayuda a llevar una sonrisa a quienes más lo necesitan.",
             cta: "Únete ahora",
             alt: "Voluntarios del equipo Al-Namrouth"
           },
-          contact: { 
+          contact: {
             title: "Contáctenos",
             getInTouch: "Ponerse en contacto",
             successMsg: "¡Gracias por su mensaje! Nos pondremos en contacto con usted pronto.",
@@ -563,7 +568,7 @@ i18n
               email: "Email: info@abad-rahman.org"
             }
           },
-          donation: { 
+          donation: {
             title: "Apóyanos",
             description: "Tu contribución hace una diferencia real. Elige el método de donación que más te convenga.",
             bankDetails: "Detalles de la cuenta bancaria",
@@ -601,8 +606,8 @@ i18n
           title: "Yayasan Abad Al-Rahman",
           subtitle: "Dampak Kemanusiaan Berkelanjutan.. Membangun Masa Depan",
           nav: { home: "Beranda", impact: "Dampak", about: "Tentang Kami", projects: "Proyek Medis", contact: "Kontak", open: "Buka Menu", close: "Tutup Menu" },
-          hero: { 
-            title: "Membuat Perbedaan dalam Hidup Orang Lain", 
+          hero: {
+            title: "Membuat Perbedaan dalam Hidup Orang Lain",
             description: "LSM Terdaftar No. 1784 tahun 2007, bekerja untuk memberdayakan masyarakat melalui dukungan medis, pangan, dan sosial.",
             supportBtn: "Dukung Kami Sekarang"
           },
@@ -630,12 +635,13 @@ i18n
               appreciation: "Sertifikat Penghargaan"
             }
           },
-          about: { 
-            title: "Tentang Kami",
-            mission: "Misi Kami",
-            missionText: "Kami berupaya memberikan dukungan komprehensif kepada kelompok yang paling membutuhkan melalui program pangan, medis, dan sosial yang berkelanjutan.",
-            history: "Sejarah Kami",
-            historyText: "Yayasan Abad Al-Rahman didirikan pada tahun 2007 sebagai entitas resmi yang terdaftar dengan No. 1784, dan sejak saat itu kami telah melayani masyarakat dengan tulus dan transparan.",
+          about: {
+            title: "Siapa Kami dan Apa yang Kami Inginkan?",
+            description: "Yayasan amal nirlaba yang bekerja sejak 2007 untuk mendukung kaum miskin dan membutuhkan, serta membangun komunitas pedesaan melalui program pangan, medis, dan pembangunan yang berkelanjutan.",
+            mission: "Visi Kami",
+            missionText: "Kepemimpinan: Menjadi model utama dalam menyediakan layanan medis gratis dengan kualitas global.\nInklusivitas: Masyarakat yang sehat dan pasokan pangan yang mandiri.\nKeberlanjutan: Mengubah donasi menjadi aset amal permanen (sedekah jariyah yang melayani generasi).\nMartabat: Memberikan bantuan kepada setiap orang yang membutuhkan dengan standar kesederhanaan dan apresiasi tertinggi.",
+            history: "Tujuan Kami",
+            historyText: "Perawatan Medis: Menyediakan layanan medis gratis dan komprehensif (melalui Kompleks Medis) kepada setiap orang yang membutuhkan.\nKetahanan Pangan: Menjaga distribusi pangan dan mengembangkan \"Dapur Al-Namrouth\" untuk menjangkau ribuan keluarga.\nSantunan Anak Yatim: Memperhatikan keluarga kurang mampu dan anak yatim secara finansial dan moral untuk menjamin kehidupan yang layak.\nMembangun Dampak: Mendirikan Kompleks Medis baru (6 lantai) sebagai sedekah jariyah yang berkelanjutan.\nPembangunan Desa: Memajukan layanan publik di Al-Namrouth dan mendukung pernikahan bagi mereka yang kurang mampu.",
             altEvent: "Acara Yayasan"
           },
           activities: {
@@ -649,13 +655,13 @@ i18n
             aid: "Bantuan Bulanan & Umum",
             aidDesc: "Mendukung lebih dari 250 keluarga (200.000 EGP per bulan), menyediakan peralatan medis, dan dukungan hidup yang mendesak."
           },
-          volunteer: { 
+          volunteer: {
             title: "Tim Al-Namrouth",
             description: "Jadilah bagian dari perubahan. Bergabunglah dengan relawan kami dan bantu berikan senyuman kepada mereka yang membutuhkan.",
             cta: "Bergabung Sekarang",
             alt: "Relawan Tim Al-Namrouth"
           },
-          contact: { 
+          contact: {
             title: "Hubungi Kami",
             getInTouch: "Hubungi Kami",
             successMsg: "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.",
@@ -671,7 +677,7 @@ i18n
               email: "Email: info@abad-rahman.org"
             }
           },
-          donation: { 
+          donation: {
             title: "Dukung Kami",
             description: "Kontribusi Anda membuat perbedaan nyata. Pilih metode donasi yang sesuai untuk Anda.",
             bankDetails: "Detail Rekening Bank",
