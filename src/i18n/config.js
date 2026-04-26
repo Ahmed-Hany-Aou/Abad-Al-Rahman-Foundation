@@ -28,14 +28,7 @@ i18n
             description: "مؤسسة مشهرة برقم 1784 لسنة 2007، تعمل على تمكين المجتمع من خلال الدعم الطبي والغذائي والاجتماعي.",
             supportBtn: "ادعمنا الآن"
           },
-          metrics: {
-            ramadanMeals: "وجبة رمضان",
-            weeklyMeals: "وجبة أسبوعية",
-            foodBoxes: "كرتونة مواد غذائية",
-            totalAid: "إجمالي المساعدات (جنية)",
-            beneficiaries: "حالة مستفيدة",
-            prescriptions: "روشتة مجانية"
-          },
+
           about: {
             title: "من نحن وماذا نريد؟",
             description: "مؤسسة خيرية غير ربحية تعمل منذ عام ٢٠٠٧ على دعم الفقراء والمساكين وتنمية المجتمعات الريفية من خلال برامج غذائية وطبية وتنموية مستدامة.",
@@ -96,18 +89,25 @@ i18n
             }
           },
           metrics: {
-            ramadanMeals: "وجبة رمضان",
-            ramadanValue: "26,525",
-            weeklyMeals: "وجبة أسبوعية",
-            weeklyValue: "3,250",
-            foodBoxes: "كرتونة مواد غذائية",
-            boxesValue: "300",
-            totalAid: "إجمالي المساعدات (جنية)",
-            totalAidValue: "1.6 مليون+",
-            beneficiaries: "حالة مستفيدة",
-            beneficiariesValue: "874",
-            prescriptions: "روشتة مجانية",
-            medicalValue: "1,396"
+            categories: {
+              medical: "الأثر الطبي",
+              food: "الأمن الغذائي",
+              social: "التكافل الاجتماعي",
+              future: "مشروعنا القادم"
+            },
+            ramadanMeals: { label: "وجبة رمضان", value: 25000, suffix: "" },
+            mealCost: { label: "تكلفة الوجبة", value: 65, suffix: " جنية" },
+            villages: { label: "قرى ومناطق", value: 10, suffix: "+" },
+            clinics: { label: "عيادة متخصصة", value: 13, suffix: "+" },
+            medicalYears: { label: "سنوات التميز الطبي", value: 10, suffix: "" },
+            foodYears: { label: "سنوات العطاء المستمر", value: 8, suffix: "" },
+            pharmacyCost: { label: "تكلفة الصيدلية شهرياً", value: 50000, suffix: " جنية" },
+            families: { label: "أسر مستفيدة شهرياً", value: 25, suffix: "+" },
+            monthlyAid: { label: "مساعدات شهرية ثابتة", value: 20000, suffix: " جنية" },
+            newArea: { label: "مساحة المجمع الجديد", value: 250, suffix: " متر²" },
+            newFloors: { label: "أدوار المجمع الجديد", value: 6, suffix: "" },
+            newUnits: { label: "وحدات طبية مستهدفة", value: 5, suffix: "" },
+            totalAid: { label: "إجمالي المساعدات", value: 1600000, suffix: "+" }
           },
           volunteer: {
             title: "فريق النمروط",
@@ -159,12 +159,25 @@ i18n
             supportBtn: "Support Us Now"
           },
           metrics: {
-            ramadanMeals: "Ramadan Meals",
-            weeklyMeals: "Weekly Meals",
-            foodBoxes: "Food Boxes",
-            totalAid: "Total Aid (EGP)",
-            beneficiaries: "Beneficiaries",
-            prescriptions: "Free Prescriptions"
+            categories: {
+              medical: "Medical Impact",
+              food: "Food Security",
+              social: "Social Solidarity",
+              future: "Our Future Project"
+            },
+            ramadanMeals: { label: "Ramadan Meals", value: 25000, suffix: "" },
+            mealCost: { label: "Meal Cost", value: 65, suffix: " EGP" },
+            villages: { label: "Villages & Hamlets", value: 10, suffix: "+" },
+            clinics: { label: "Specialized Clinics", value: 13, suffix: "+" },
+            medicalYears: { label: "Medical Excellence Years", value: 10, suffix: "" },
+            foodYears: { label: "Continuous Giving Years", value: 8, suffix: "" },
+            pharmacyCost: { label: "Pharmacy Monthly Cost", value: 50000, suffix: " EGP" },
+            families: { label: "Monthly Beneficiaries", value: 25, suffix: "+" },
+            monthlyAid: { label: "Fixed Monthly Aid", value: 20000, suffix: " EGP" },
+            newArea: { label: "New Complex Area", value: 250, suffix: " m²" },
+            newFloors: { label: "New Complex Floors", value: 6, suffix: "" },
+            newUnits: { label: "Targeted Medical Units", value: 5, suffix: "" },
+            totalAid: { label: "Total Yearly Aid", value: 1600000, suffix: "+" }
           },
           trust: {
             title: "Trust & Credibility",
@@ -229,20 +242,7 @@ i18n
               appreciation: "Appreciation Certificate"
             }
           },
-          metrics: {
-            ramadanMeals: "Ramadan Meals",
-            ramadanValue: "26,525",
-            weeklyMeals: "Weekly Meals",
-            weeklyValue: "3,250",
-            foodBoxes: "Food Boxes",
-            boxesValue: "300",
-            totalAid: "Total Aid (EGP)",
-            totalAidValue: "1.6M+",
-            beneficiaries: "Beneficiaries",
-            beneficiariesValue: "874",
-            prescriptions: "Free Prescriptions",
-            medicalValue: "1,396"
-          },
+
           volunteer: {
             title: "Team Al-Namrouth",
             description: "Be part of the change. Join our volunteers and help bring a smile to those in need.",
@@ -285,18 +285,25 @@ i18n
             supportBtn: "Jetzt unterstützen"
           },
           metrics: {
-            ramadanMeals: "Ramadan-Mahlzeiten",
-            ramadanValue: "26.525",
-            weeklyMeals: "Wöchentliche Mahlzeiten",
-            weeklyValue: "3.250",
-            foodBoxes: "Lebensmittelboxen",
-            boxesValue: "300",
-            totalAid: "Gesamthilfe (EGP)",
-            totalAidValue: "1,6 Mio.+",
-            beneficiaries: "Begünstigte",
-            beneficiariesValue: "874",
-            prescriptions: "Kostenlose Rezepte",
-            medicalValue: "1.396"
+            categories: {
+              medical: "Medizinische Wirkung",
+              food: "Ernährungssicherheit",
+              social: "Soziale Solidarität",
+              future: "Unser Zukunftsprojekt"
+            },
+            ramadanMeals: { label: "Ramadan-Mahlzeiten", value: 25000, suffix: "" },
+            mealCost: { label: "Kosten pro Mahlzeit", value: 65, suffix: " EGP" },
+            villages: { label: "Dörfer & Weiler", value: 10, suffix: "+" },
+            clinics: { label: "Spezialisierte Kliniken", value: 13, suffix: "+" },
+            medicalYears: { label: "Jahre medizinische Exzellenz", value: 10, suffix: "" },
+            foodYears: { label: "Jahre kontinuierliche Hilfe", value: 8, suffix: "" },
+            pharmacyCost: { label: "Monatliche Kosten Apotheke", value: 50000, suffix: " EGP" },
+            families: { label: "Monatliche Begünstigte", value: 25, suffix: "+" },
+            monthlyAid: { label: "Feste monatliche Hilfe", value: 20000, suffix: " EGP" },
+            newArea: { label: "Fläche des neuen Komplexes", value: 250, suffix: " m²" },
+            newFloors: { label: "Stockwerke des neuen Komplexes", value: 6, suffix: "" },
+            newUnits: { label: "Geplante medizinische Einheiten", value: 5, suffix: "" },
+            totalAid: { label: "Gesamte jährliche Hilfe", value: 1600000, suffix: "+" }
           },
           trust: {
             title: "Vertrauen & Glaubwürdigkeit",
@@ -394,18 +401,25 @@ i18n
             supportBtn: "Soutenez-nous maintenant"
           },
           metrics: {
-            ramadanMeals: "Repas du Ramadan",
-            ramadanValue: "26 525",
-            weeklyMeals: "Repas hebdomadaires",
-            weeklyValue: "3 250",
-            foodBoxes: "Boîtes de nourriture",
-            boxesValue: "300",
-            totalAid: "Aide totale (EGP)",
-            totalAidValue: "1,6M+",
-            beneficiaries: "Bénéficiaires",
-            beneficiariesValue: "874",
-            prescriptions: "Prescriptions gratuites",
-            medicalValue: "1 396"
+            categories: {
+              medical: "Impact Médical",
+              food: "Sécurité Alimentaire",
+              social: "Solidarité Sociale",
+              future: "Notre Projet Futur"
+            },
+            ramadanMeals: { label: "Repas du Ramadan", value: 25000, suffix: "" },
+            mealCost: { label: "Coût par repas", value: 65, suffix: " EGP" },
+            villages: { label: "Villages et Hameaux", value: 10, suffix: "+" },
+            clinics: { label: "Cliniques Spécialisées", value: 13, suffix: "+" },
+            medicalYears: { label: "Années d'Excellence Médicale", value: 10, suffix: "" },
+            foodYears: { label: "Années de Don Continu", value: 8, suffix: "" },
+            pharmacyCost: { label: "Coût mensuel pharmacie", value: 50000, suffix: " EGP" },
+            families: { label: "Bénéficiaires Mensuels", value: 25, suffix: "+" },
+            monthlyAid: { label: "Aide mensuelle fixe", value: 20000, suffix: " EGP" },
+            newArea: { label: "Surface du nouveau complexe", value: 250, suffix: " m²" },
+            newFloors: { label: "Étages du nouveau complexe", value: 6, suffix: "" },
+            newUnits: { label: "Unités médicales ciblées", value: 5, suffix: "" },
+            totalAid: { label: "Aide annuelle totale", value: 1600000, suffix: "+" }
           },
           trust: {
             title: "Confiance et Crédibilité",
@@ -503,18 +517,25 @@ i18n
             supportBtn: "Apóyanos ahora"
           },
           metrics: {
-            ramadanMeals: "Comidas de Ramadán",
-            ramadanValue: "26.525",
-            weeklyMeals: "Comidas semanales",
-            weeklyValue: "3.250",
-            foodBoxes: "Cajas de comida",
-            boxesValue: "300",
-            totalAid: "Ayuda total (EGP)",
-            totalAidValue: "1.6M+",
-            beneficiaries: "Beneficiarios",
-            beneficiariesValue: "874",
-            prescriptions: "Recetas gratuitas",
-            medicalValue: "1.396"
+            categories: {
+              medical: "Impacto Médico",
+              food: "Seguridad Alimentaria",
+              social: "Solidaridad Social",
+              future: "Nuestro Proyecto Futuro"
+            },
+            ramadanMeals: { label: "Comidas de Ramadán", value: 25000, suffix: "" },
+            mealCost: { label: "Costo por comida", value: 65, suffix: " EGP" },
+            villages: { label: "Pueblos y Caseríos", value: 10, suffix: "+" },
+            clinics: { label: "Clínicas Especializadas", value: 13, suffix: "+" },
+            medicalYears: { label: "Años de Excelencia Médica", value: 10, suffix: "" },
+            foodYears: { label: "Años de Donación Continua", value: 8, suffix: "" },
+            pharmacyCost: { label: "Costo mensual farmacia", value: 50000, suffix: " EGP" },
+            families: { label: "Beneficiarios Mensuales", value: 25, suffix: "+" },
+            monthlyAid: { label: "Ayuda mensual fija", value: 20000, suffix: " EGP" },
+            newArea: { label: "Superficie del nuevo complejo", value: 250, suffix: " m²" },
+            newFloors: { label: "Pisos del nuevo complejo", value: 6, suffix: "" },
+            newUnits: { label: "Unidades médicas previstas", value: 5, suffix: "" },
+            totalAid: { label: "Ayuda anual total", value: 1600000, suffix: "+" }
           },
           trust: {
             title: "Confianza y Credibilidad",
@@ -612,18 +633,25 @@ i18n
             supportBtn: "Dukung Kami Sekarang"
           },
           metrics: {
-            ramadanMeals: "Makanan Ramadhan",
-            ramadanValue: "26.525",
-            weeklyMeals: "Makanan Mingguan",
-            weeklyValue: "3.250",
-            foodBoxes: "Kotak Makanan",
-            boxesValue: "300",
-            totalAid: "Total Bantuan (EGP)",
-            totalAidValue: "1.6jt+",
-            beneficiaries: "Penerima Manfaat",
-            beneficiariesValue: "874",
-            prescriptions: "Resep Gratis",
-            medicalValue: "1.396"
+            categories: {
+              medical: "Dampak Medis",
+              food: "Ketahanan Pangan",
+              social: "Solidaritas Sosial",
+              future: "Proyek Masa Depan Kami"
+            },
+            ramadanMeals: { label: "Makanan Ramadhan", value: 25000, suffix: "" },
+            mealCost: { label: "Biaya per Makanan", value: 65, suffix: " EGP" },
+            villages: { label: "Desa & Dusun", value: 10, suffix: "+" },
+            clinics: { label: "Klinik Spesialis", value: 13, suffix: "+" },
+            medicalYears: { label: "Tahun Keunggulan Medis", value: 10, suffix: "" },
+            foodYears: { label: "Tahun Pemberian Berkelanjutan", value: 8, suffix: "" },
+            pharmacyCost: { label: "Biaya Bulanan Apotek", value: 50000, suffix: " EGP" },
+            families: { label: "Penerima Manfaat Bulanan", value: 25, suffix: "+" },
+            monthlyAid: { label: "Bantuan Bulanan Tetap", value: 20000, suffix: " EGP" },
+            newArea: { label: "Luas Kompleks Baru", value: 250, suffix: " m²" },
+            newFloors: { label: "Lantai Kompleks Baru", value: 6, suffix: "" },
+            newUnits: { label: "Unit Medis Target", value: 5, suffix: "" },
+            totalAid: { label: "Total Bantuan Tahunan", value: 1600000, suffix: "+" }
           },
           trust: {
             title: "Kepercayaan & Kredibilitas",
