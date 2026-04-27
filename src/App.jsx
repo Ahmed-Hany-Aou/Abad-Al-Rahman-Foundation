@@ -85,7 +85,7 @@ function App() {
                 </>
               } />
               <Route path="/about" element={<AboutSection />} />
-              <Route path="/projects" element={<MedicalProjects />} />
+              <Route path="/projects" element={<MedicalProjects onOpenDonation={() => setIsDonationOpen(true)} />} />
               <Route path="/volunteer" element={<VolunteerSection />} />
               <Route path="/contact" element={<ContactSection />} />
             </Routes>

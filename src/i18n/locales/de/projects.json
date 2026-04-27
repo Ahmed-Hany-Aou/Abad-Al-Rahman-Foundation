@@ -1,6 +1,54 @@
 {
-  "title": "Zukünftige Medizinische Projekte",
-  "subtitle": "Arbeit an der Einrichtung spezialisierter medizinischer Zentren (Im Bau)",
+  "pageTitle": "Unsere medizinischen Dienste",
+  "pageSubtitle": "Ein Jahrzehnt kostenloser Gesundheitsversorgung für die Bedürftigsten",
+
+  "heroBadge": "Seit 2007 · Reg.-Nr. 1784",
+  "heroHeading": "Umfassende medizinische Versorgung, kostenlos",
+  "heroDescription": "Von einer einzelnen Klinik zu einem vollständigen medizinischen Komplex — wir bieten kostenlose Gesundheitsversorgung, Medikamente und chirurgische Dienste für Tausende.",
+
+  "existingTitle": "Unsere aktiven medizinischen Programme",
+  "existingSubtitle": "Dienste, die heute laufen und der Gemeinschaft jeden Tag dienen",
+
+  "complexTitle": "Wohltätigkeits-Medizinkomplex",
+  "complexDesc": "Unsere Haupteinrichtung im Dorf Al-Namrouth, die seit über 10 Jahren umfassende kostenlose Gesundheitsversorgung bietet.",
+  "complexYears": "10 Jahre Exzellenz",
+  "complexService1": "Baby-Inkubatoren",
+  "complexService2": "Allgemeinchirurgie-Zentrum",
+  "complexService3": "Medizinisches Analysenlabor",
+  "complexService4": "13+ Fachkliniken",
+  "complexService5": "Kostenlose Beratungen",
+  "complexTagline": "Umfassende medizinische Versorgung ohne Kosten.",
+
+  "pharmacyTitle": "Wohltätigkeitsapotheke",
+  "pharmacyDesc": "Kostenlose Medikamentenausgabe für Arme und Bedürftige das ganze Jahr über.",
+  "pharmacyYears": "8 Jahre kostenlose Medizin",
+  "pharmacyCost": "50.000 EGP Monatsbudget",
+  "pharmacyTagline": "Sichere und kostenlose Medizin für jeden Bedürftigen.",
+
+  "impactTitle": "Jährlicher Wirkungsbericht",
+  "impactSubtitle": "Echte Zahlen aus unserem letzten Dienstjahr",
+  "impactPrescriptions": "Kostenlose Rezepte",
+  "impactPrescriptionsCost": "Wert der kostenlosen Medizin",
+  "impactSurgeries": "Unterstützte Chirurgiefälle",
+  "impactSurgeriesCost": "Wert der Chirurgiehilfe",
+  "impactLabTests": "Durchgeführte Labortests",
+  "impactLabTestsCost": "Wert der Labortests",
+  "impactIncubator": "Inkubatorfälle (kostenlos)",
+  "impactIncubatorPartial": "Teilweise Inkubatorfälle",
+  "impactPhysioSessions": "Physiotherapie-Sitzungen",
+  "impactConsultations": "Kostenlose medizinische Beratungen",
+  "impactBeneficiaries": "Begünstigte allgemeiner Hilfe",
+  "impactTotalAid": "Gesamte Jahreshilfe",
+  "impactEGP": "EGP",
+
+  "upcomingTitle": "Unser kommendes Projekt",
+  "upcomingSubtitle": "Ein Projekt, das die Zukunft der Gesundheitsversorgung in der Region verändern wird",
+  "upcomingBadge": "Im Bau",
+  "upcomingHeading": "Neuer 6-stöckiger Wohltätigkeits-Medizinkomplex",
+  "upcomingArea": "250 m² Gebäudefläche",
+  "upcomingFloors": "6 Stockwerke",
+  "upcomingDesc": "Errichtung eines neuen hochmodernen Wohltätigkeits-Medizinkomplexes mit spezialisierten medizinischen Zentren.",
+
   "radiology": "Integriertes Radiologiezentrum",
   "radiologyDesc": "Bereitstellung modernster diagnostischer Radiologiegeräte für Patienten.",
   "eye": "Augenchirurgiezentrum",
@@ -10,5 +58,9 @@
   "icu": "Intensivstation",
   "icuDesc": "Voll ausgestattete Intensivstationen für kritische Fälle.",
   "dialysis": "Dialysezentrum",
-  "dialysisDesc": "Moderne Dialyseeinheiten für die kontinuierliche Versorgung von Patienten."
+  "dialysisDesc": "Moderne Dialyseeinheiten für die kontinuierliche Versorgung.",
+
+  "ctaTitle": "Unterstützen Sie die Zukunft der Gesundheitsversorgung",
+  "ctaDescription": "Jede Spende hilft, Weltklasse-Medizin zu denen zu bringen, die sie sich nicht leisten können.",
+  "ctaButton": "Jetzt spenden"
 }

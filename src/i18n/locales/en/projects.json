@@ -1,8 +1,56 @@
 {
-  "title": "Upcoming Medical Projects",
-  "subtitle": "Working to establish specialized medical centers to serve the community (Under Construction)",
+  "pageTitle": "Our Medical Services",
+  "pageSubtitle": "A decade of free healthcare for those who need it most",
+
+  "heroBadge": "Since 2007 · Reg. No. 1784",
+  "heroHeading": "Comprehensive Medical Care, Free of Charge",
+  "heroDescription": "From a single clinic to a full medical complex — we provide free healthcare, medicine, and surgical services to thousands in Al-Namrouth and surrounding villages.",
+
+  "existingTitle": "Our Active Medical Programs",
+  "existingSubtitle": "Services running today, serving the community every day",
+
+  "complexTitle": "Charity Medical Complex",
+  "complexDesc": "Our flagship facility in Al-Namrouth Village, providing comprehensive free healthcare for over 10 years.",
+  "complexYears": "10 Years of Excellence",
+  "complexService1": "Baby Incubators",
+  "complexService2": "General Surgery Center",
+  "complexService3": "Medical Analysis Laboratory",
+  "complexService4": "13+ Specialized Clinics",
+  "complexService5": "Free Consultations",
+  "complexTagline": "Comprehensive medical care with no charge.",
+
+  "pharmacyTitle": "Charity Pharmacy",
+  "pharmacyDesc": "Dispensing free medication to the poor and needy year-round. Medicine is a right for every person in need.",
+  "pharmacyYears": "8 Years of Free Medicine",
+  "pharmacyCost": "50,000 EGP Monthly Budget",
+  "pharmacyTagline": "Safe and free medicine for every needy person.",
+
+  "impactTitle": "Annual Impact Report",
+  "impactSubtitle": "Real numbers from our latest year of service",
+  "impactPrescriptions": "Free Prescriptions",
+  "impactPrescriptionsCost": "Worth of Free Medicine",
+  "impactSurgeries": "Surgery Cases Assisted",
+  "impactSurgeriesCost": "Surgery Assistance Value",
+  "impactLabTests": "Lab Tests Performed",
+  "impactLabTestsCost": "Lab Tests Value",
+  "impactIncubator": "Incubator Cases (Free)",
+  "impactIncubatorPartial": "Partial Incubator Cases",
+  "impactPhysioSessions": "Physical Therapy Sessions",
+  "impactConsultations": "Free Medical Consultations",
+  "impactBeneficiaries": "General Aid Beneficiaries",
+  "impactTotalAid": "Total Annual Aid",
+  "impactEGP": "EGP",
+
+  "upcomingTitle": "Our Upcoming Project",
+  "upcomingSubtitle": "A project that will change the future of healthcare in the region",
+  "upcomingBadge": "Under Construction",
+  "upcomingHeading": "New 6-Floor Charity Medical Complex",
+  "upcomingArea": "250 m² Building Area",
+  "upcomingFloors": "6 Floors",
+  "upcomingDesc": "Establishing a new state-of-the-art charity medical complex to serve the growing needs of the community with specialized medical centers.",
+
   "radiology": "Integrated Radiology Center",
-  "radiologyDesc": "Providing the latest diagnostic radiology equipment to serve patients for free or at nominal prices.",
+  "radiologyDesc": "Providing the latest diagnostic radiology equipment to serve patients for free.",
   "eye": "Eye Surgery Center",
   "eyeDesc": "Cataract and glaucoma surgeries, and vision correction using the latest technologies.",
   "physical": "Complete Physical Therapy Center",
@@ -10,5 +58,9 @@
   "icu": "Intensive Care Unit",
   "icuDesc": "Fully equipped intensive care rooms to receive critical cases.",
   "dialysis": "Kidney Dialysis Center",
-  "dialysisDesc": "Advanced kidney dialysis units to provide continuous service to patients."
+  "dialysisDesc": "Advanced kidney dialysis units to provide continuous service to patients.",
+
+  "ctaTitle": "Support the Future of Healthcare",
+  "ctaDescription": "Every donation helps bring world-class medical care to those who cannot afford it. Be part of this ongoing charity.",
+  "ctaButton": "Donate Now"
 }

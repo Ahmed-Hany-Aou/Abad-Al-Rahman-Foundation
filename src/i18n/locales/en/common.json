@@ -19,17 +19,19 @@
   "contact": {
     "title": "Contact Us",
     "getInTouch": "Get in Touch",
-    "successMsg": "Thank you for your message! We will get back to you soon.",
+    "successMsg": "Your message was sent via WhatsApp!",
+    "whatsappLabel": "Send via WhatsApp",
+    "phonePlaceholder": "Your phone number (optional)",
     "form": {
-      "name": "Name",
-      "email": "Email",
+      "name": "Full Name",
+      "email": "Email Address",
       "message": "Message",
-      "send": "Send"
+      "send": "Send via WhatsApp"
     },
     "info": {
-      "address": "Address: Cairo, Egypt",
-      "phone": "Phone: +20 100 000 0000",
-      "email": "Email: info@abad-rahman.org"
+      "address": "Location: Al-Namrouth Village, Egypt",
+      "phone": "Donations & Inquiries: 01010455183",
+      "whatsapp": "WhatsApp: 01065232774"
     }
   },
   "donation": {

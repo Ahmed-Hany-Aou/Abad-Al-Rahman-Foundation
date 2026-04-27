@@ -17,8 +17,10 @@ export const IMAGES = {
   // Volunteer Section
   volunteerTeam: '/images/volunteer-team-ai.png',
   
-  // Medical Projects (Upcoming)
+  // Medical Projects
   medicalProjectsFeature: '/images/act-medical-ai.png',
+  pharmacyInterior: '/images/pharmacy-interior-ai.png',
+  newComplexRender: '/images/new-complex-render-ai.png',
   
   // Trust & Credibility Gallery
   trustMinistry: '/images/trust-ministry-ai.png',

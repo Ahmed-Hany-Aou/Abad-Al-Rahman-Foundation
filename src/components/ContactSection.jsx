@@ -1,53 +1,290 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { MapPin, Phone, MessageCircle, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
+// Egyptian number → international WhatsApp format
+const WHATSAPP_NUMBER = '201065232774';
+
+// Build emojis at JS runtime via code-points — avoids file-encoding corruption
+const E = {
+  wave:    String.fromCodePoint(0x1F33F), // 🌿
+  name:    String.fromCodePoint(0x1F464), // 👤
+  email:   String.fromCodePoint(0x1F4E7), // 📧
+  phone:   String.fromCodePoint(0x1F4DE), // 📞
+  message: String.fromCodePoint(0x1F4AC), // 💬
+};
+
+/* ── Validation rules ───────────────────────── */
+const validate = (form) => {
+  const errors = {};
+
+  // Name — required, 2–60 chars, letters (Arabic + Latin) and spaces only
+  if (!form.name.trim()) {
+    errors.name = { ar: 'الاسم مطلوب', en: 'Name is required' };
+  } else if (form.name.trim().length < 2) {
+    errors.name = { ar: 'الاسم قصير جداً (2 أحرف على الأقل)', en: 'Name is too short (min 2 characters)' };
+  } else if (form.name.trim().length > 60) {
+    errors.name = { ar: 'الاسم طويل جداً (60 حرفاً كحد أقصى)', en: 'Name is too long (max 60 characters)' };
+  } else if (!/^[\u0600-\u06FFa-zA-Z\s'-]+$/.test(form.name.trim())) {
+    errors.name = { ar: 'الاسم يجب أن يحتوي على حروف فقط', en: 'Name must contain letters only' };
+  }
+
+  // Email — optional, but must be valid if provided
+  if (form.email.trim()) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) {
+      errors.email = { ar: 'صيغة البريد الإلكتروني غير صحيحة', en: 'Invalid email address format' };
+    }
+  }
+
+  // Phone — optional, but must be Egyptian format if provided
+  // Accepts: 01XXXXXXXXX (11 digits) or +2 01XXXXXXXXX
+  if (form.phone.trim()) {
+    const cleaned = form.phone.trim().replace(/\s+/g, '').replace(/^\+20/, '0');
+    if (!/^01[0-2,5]\d{8}$/.test(cleaned)) {
+      errors.phone = { ar: 'رقم الهاتف يجب أن يكون رقماً مصرياً صحيحاً (01XXXXXXXXX)', en: 'Must be a valid Egyptian number (01XXXXXXXXX)' };
+    }
+  }
+
+  // Message — required, 5–1000 chars
+  if (!form.message.trim()) {
+    errors.message = { ar: 'الرسالة مطلوبة', en: 'Message is required' };
+  } else if (form.message.trim().length < 5) {
+    errors.message = { ar: 'الرسالة قصيرة جداً (5 أحرف على الأقل)', en: 'Message is too short (min 5 characters)' };
+  } else if (form.message.trim().length > 1000) {
+    errors.message = { ar: 'الرسالة طويلة جداً (1000 حرف كحد أقصى)', en: 'Message is too long (max 1000 characters)' };
+  }
+
+  return errors;
+};
+
+/* ── Field Error Component ───────────────────── */
+const FieldError = ({ error, isRTL }) =>
+  error ? (
+    <span className="field-error">
+      <AlertCircle size={13} />
+      {isRTL ? error.ar : error.en}
+    </span>
+  ) : null;
+
+/* ── Main Component ──────────────────────────── */
 const ContactSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+
+  const [form, setForm]     = useState({ name: '', email: '', phone: '', message: '' });
+  const [errors, setErrors] = useState({});
+  const [touched, setTouched] = useState({});
+  const [sent, setSent]     = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+    // Re-validate the touched field on change
+    if (touched[name]) {
+      const newErrors = validate({ ...form, [name]: value });
+      setErrors((prev) => ({ ...prev, [name]: newErrors[name] }));
+    }
+  };
+
+  const handleBlur = (e) => {
+    const { name } = e.target;
+    setTouched((prev) => ({ ...prev, [name]: true }));
+    const newErrors = validate(form);
+    setErrors((prev) => ({ ...prev, [name]: newErrors[name] }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic for form submission
-    alert(t('contact.successMsg'));
+
+    // Mark all fields as touched and validate
+    setTouched({ name: true, email: true, phone: true, message: true });
+    const allErrors = validate(form);
+    setErrors(allErrors);
+
+    if (Object.keys(allErrors).length > 0) return; // abort if invalid
+
+    // Build WhatsApp message with runtime emojis (avoids file-encoding corruption)
+    const sep = '-----------------------------';
+    const lines = [
+      `${E.wave} ${isRTL ? '*رسالة جديدة من موقع مؤسسة عباد الرحمن*' : '*New message from Abad Al-Rahman Foundation website*'}`,
+      sep,
+      `${E.name} ${isRTL ? `*الاسم:* ${form.name.trim()}` : `*Name:* ${form.name.trim()}`}`,
+    ];
+
+    if (form.email.trim()) {
+      lines.push(`${E.email} ${isRTL ? `*البريد:* ${form.email.trim()}` : `*Email:* ${form.email.trim()}`}`);
+    }
+    if (form.phone.trim()) {
+      lines.push(`${E.phone} ${isRTL ? `*الهاتف:* ${form.phone.trim()}` : `*Phone:* ${form.phone.trim()}`}`);
+    }
+
+    lines.push(sep);
+    lines.push(`${E.message} ${isRTL ? `*الرسالة:*\n${form.message.trim()}` : `*Message:*\n${form.message.trim()}`}`);
+
+    const text  = encodeURIComponent(lines.join('\n'));
+    const waURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+
+    window.open(waURL, '_blank', 'noopener,noreferrer');
+
+    setSent(true);
+    setTimeout(() => {
+      setSent(false);
+      setForm({ name: '', email: '', phone: '', message: '' });
+      setTouched({});
+      setErrors({});
+    }, 3000);
+  };
+
+  const hasError = (field) => touched[field] && errors[field];
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
   };
 
   return (
-    <section id="contact" className="contact-section section-padding">
+    <motion.section
+      id="contact"
+      className="contact-section section-padding"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container">
-        <h2 className="section-title">{t('contact.title')}</h2>
-        
+        <motion.div className="section-header text-center" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <h2 className="section-title">{t('contact.title')}</h2>
+        </motion.div>
+
         <div className="contact-grid">
-          <div className="contact-info">
+          {/* ── Info Panel ── */}
+          <motion.div className="contact-info" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <h3>{t('contact.getInTouch')}</h3>
-            <p>{t('contact.info.address')}</p>
-            <p>{t('contact.info.phone')}</p>
-            <p>{t('contact.info.email')}</p>
-            
-            <div className="social-links">
-              {/* Add social media icons here */}
-              <a href="#">{t('social.fb')}</a>
-              <a href="#">{t('social.ig')}</a>
-              <a href="#">{t('social.tw')}</a>
+
+            <div className="contact-info__item">
+              <MapPin size={18} className="contact-info__icon" />
+              <span>{t('contact.info.address')}</span>
             </div>
-          </div>
-          
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">{t('contact.form.name')}</label>
-              <input type="text" id="name" required />
+
+            <div className="contact-info__item">
+              <Phone size={18} className="contact-info__icon" />
+              <span>{t('contact.info.phone')}</span>
             </div>
-            <div className="form-group">
-              <label htmlFor="email">{t('contact.form.email')}</label>
-              <input type="email" id="email" required />
+
+            <div className="contact-info__item contact-info__item--whatsapp">
+              <MessageCircle size={18} className="contact-info__icon" />
+              <span>{t('contact.info.whatsapp')}</span>
             </div>
-            <div className="form-group">
-              <label htmlFor="message">{t('contact.form.message')}</label>
-              <textarea id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" className="btn-primary">{t('contact.form.send')}</button>
-          </form>
+
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-whatsapp-direct"
+            >
+              <MessageCircle size={20} />
+              {isRTL ? 'راسلنا مباشرةً على واتساب' : 'Chat with us on WhatsApp'}
+            </a>
+          </motion.div>
+
+          {/* ── Form Panel ── */}
+          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            <form className="contact-form" onSubmit={handleSubmit} noValidate>
+
+              {/* Name */}
+              <div className={`form-group ${hasError('name') ? 'form-group--error' : ''}`}>
+                <label htmlFor="contact-name">
+                  {t('contact.form.name')} <span className="required-star">*</span>
+                </label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  value={form.name}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder={isRTL ? 'الاسم الكامل' : 'Your full name'}
+                  maxLength={60}
+                />
+                <FieldError error={errors.name} isRTL={isRTL} />
+              </div>
+
+              {/* Email + Phone side by side */}
+              <div className="form-row">
+                <div className={`form-group ${hasError('email') ? 'form-group--error' : ''}`}>
+                  <label htmlFor="contact-email">{t('contact.form.email')}</label>
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    placeholder="example@mail.com"
+                  />
+                  <FieldError error={errors.email} isRTL={isRTL} />
+                </div>
+
+                <div className={`form-group ${hasError('phone') ? 'form-group--error' : ''}`}>
+                  <label htmlFor="contact-phone">{t('contact.phonePlaceholder')}</label>
+                  <input
+                    id="contact-phone"
+                    name="phone"
+                    type="tel"
+                    value={form.phone}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    placeholder="01XXXXXXXXX"
+                    maxLength={13}
+                  />
+                  <FieldError error={errors.phone} isRTL={isRTL} />
+                </div>
+              </div>
+
+              {/* Message */}
+              <div className={`form-group ${hasError('message') ? 'form-group--error' : ''}`}>
+                <label htmlFor="contact-message">
+                  {t('contact.form.message')} <span className="required-star">*</span>
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  value={form.message}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder={isRTL ? 'اكتب رسالتك هنا...' : 'Write your message here...'}
+                  maxLength={1000}
+                />
+                <div className="form-footer-row">
+                  <FieldError error={errors.message} isRTL={isRTL} />
+                  <span className="char-count">{form.message.length}/1000</span>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                className={`btn-primary btn-whatsapp-submit ${sent ? 'btn-sent' : ''}`}
+                disabled={sent}
+              >
+                {sent ? (
+                  <><CheckCircle size={20} />{isRTL ? 'تم الإرسال!' : 'Sent!'}</>
+                ) : (
+                  <><Send size={20} />{t('contact.form.send')}</>
+                )}
+              </button>
+
+              <p className="contact-form__hint">
+                {isRTL
+                  ? '📲 سيفتح واتساب تلقائياً برسالتك جاهزة للإرسال'
+                  : '📲 WhatsApp will open with your message ready to send'}
+              </p>
+            </form>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
