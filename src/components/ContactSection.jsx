@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, MessageCircle, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 // Egyptian number → international WhatsApp format
 const WHATSAPP_NUMBER = '201065232774';
 
-// Build emojis at JS runtime via code-points — avoids file-encoding corruption
-const E = {
-  wave:    String.fromCodePoint(0x1F33F), // 🌿
-  name:    String.fromCodePoint(0x1F464), // 👤
+// Build emojis at JS runtime via code-points (avoids file-encoding issues)
+const EMOJI = {
+  leaf:    String.fromCodePoint(0x1F33F), // 🌿
+  person:  String.fromCodePoint(0x1F464), // 👤
   email:   String.fromCodePoint(0x1F4E7), // 📧
   phone:   String.fromCodePoint(0x1F4DE), // 📞
-  message: String.fromCodePoint(0x1F4AC), // 💬
+  speech:  String.fromCodePoint(0x1F4AC), // 💬
 };
 
 /* ── Validation rules ───────────────────────── */
@@ -37,13 +39,9 @@ const validate = (form) => {
     }
   }
 
-  // Phone — optional, but must be Egyptian format if provided
-  // Accepts: 01XXXXXXXXX (11 digits) or +2 01XXXXXXXXX
-  if (form.phone.trim()) {
-    const cleaned = form.phone.trim().replace(/\s+/g, '').replace(/^\+20/, '0');
-    if (!/^01[0-2,5]\d{8}$/.test(cleaned)) {
-      errors.phone = { ar: 'رقم الهاتف يجب أن يكون رقماً مصرياً صحيحاً (01XXXXXXXXX)', en: 'Must be a valid Egyptian number (01XXXXXXXXX)' };
-    }
+  // Phone — optional, but must be at least 8 chars if provided
+  if (form.phone && form.phone.trim().length > 0 && form.phone.trim().length < 8) {
+    errors.phone = { ar: 'رقم الهاتف يجب أن يكون صحيحاً', en: 'Must be a valid phone number' };
   }
 
   // Message — required, 5–1000 chars
@@ -87,6 +85,14 @@ const ContactSection = () => {
     }
   };
 
+  const handlePhoneChange = (phone) => {
+    setForm((prev) => ({ ...prev, phone }));
+    if (touched.phone) {
+      const newErrors = validate({ ...form, phone });
+      setErrors((prev) => ({ ...prev, phone: newErrors.phone }));
+    }
+  };
+
   const handleBlur = (e) => {
     const { name } = e.target;
     setTouched((prev) => ({ ...prev, [name]: true }));
@@ -104,26 +110,34 @@ const ContactSection = () => {
 
     if (Object.keys(allErrors).length > 0) return; // abort if invalid
 
-    // Build WhatsApp message with runtime emojis (avoids file-encoding corruption)
+    // Build WhatsApp message — Always in Arabic with emojis
     const sep = '-----------------------------';
     const lines = [
-      `${E.wave} ${isRTL ? '*رسالة جديدة من موقع مؤسسة عباد الرحمن*' : '*New message from Abad Al-Rahman Foundation website*'}`,
+      EMOJI.leaf + ' *رسالة جديدة من موقع مؤسسة عباد الرحمن*',
       sep,
-      `${E.name} ${isRTL ? `*الاسم:* ${form.name.trim()}` : `*Name:* ${form.name.trim()}`}`,
+      EMOJI.person + ' *الاسم:* ' + form.name.trim(),
     ];
 
     if (form.email.trim()) {
-      lines.push(`${E.email} ${isRTL ? `*البريد:* ${form.email.trim()}` : `*Email:* ${form.email.trim()}`}`);
+      lines.push(EMOJI.email + ' *البريد:* ' + form.email.trim());
     }
     if (form.phone.trim()) {
-      lines.push(`${E.phone} ${isRTL ? `*الهاتف:* ${form.phone.trim()}` : `*Phone:* ${form.phone.trim()}`}`);
+      lines.push(EMOJI.phone + ' *الهاتف:* ' + form.phone.trim());
     }
 
     lines.push(sep);
-    lines.push(`${E.message} ${isRTL ? `*الرسالة:*\n${form.message.trim()}` : `*Message:*\n${form.message.trim()}`}`);
+    lines.push(EMOJI.speech + ' *الرسالة:*');
+    lines.push(form.message.trim());
 
-    const text  = encodeURIComponent(lines.join('\n'));
-    const waURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    // Build the full message, then encode it properly for WhatsApp:
+    // 1. Join lines with real newlines
+    // 2. encodeURIComponent handles emojis correctly (%F0%9F... sequences)
+    // 3. But it doesn't encode * — we must replace * with %2A for bold to work
+    const fullMessage = lines.join('\n');
+    const encoded = encodeURIComponent(fullMessage).replace(/\*/g, '%2A');
+
+    // Use api.whatsapp.com/send (more reliable for emojis than wa.me)
+    const waURL = `https://api.whatsapp.com/send/?phone=${WHATSAPP_NUMBER}&text=${encoded}`;
 
     window.open(waURL, '_blank', 'noopener,noreferrer');
 
@@ -228,15 +242,13 @@ const ContactSection = () => {
 
                 <div className={`form-group ${hasError('phone') ? 'form-group--error' : ''}`}>
                   <label htmlFor="contact-phone">{t('contact.phonePlaceholder')}</label>
-                  <input
-                    id="contact-phone"
-                    name="phone"
-                    type="tel"
+                  <PhoneInput
+                    defaultCountry="eg"
                     value={form.phone}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    placeholder="01XXXXXXXXX"
-                    maxLength={13}
+                    onChange={handlePhoneChange}
+                    onBlur={() => handleBlur({ target: { name: 'phone' } })}
+                    inputClassName="phone-input-field"
+                    className="phone-input-container"
                   />
                   <FieldError error={errors.phone} isRTL={isRTL} />
                 </div>
