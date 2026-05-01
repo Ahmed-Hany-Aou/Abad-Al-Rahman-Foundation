@@ -7,6 +7,7 @@
     "about": "About Us",
     "projects": "Medical Projects",
     "contact": "Contact",
+    "support": "Support Us Now",
     "open": "Open Menu",
     "close": "Close Menu"
   },
@@ -40,7 +41,15 @@
     "bankDetails": "Bank Account Details",
     "accountNumber": "Account Number: 123456789",
     "bankName": "Bank: National Bank of Egypt",
-    "close": "Close"
+    "close": "Close",
+    "instapay": {
+      "payLink": "Click here to pay to: ",
+      "orScan": "or scan the QR code below:",
+      "refPlaceholder": "Enter reference numbers only",
+      "mobileLabel": "Your Mobile Number (Used in Instapay) *",
+      "submit": "Submit Payment Confirmation",
+      "whatsappNote": "You will be redirected to WhatsApp. Please attach your payment screenshot there."
+    }
   },
   "trust": {
     "title": "Trust & Credibility",
@@ -65,3 +74,4 @@
     "supportBtn": "Support Us Now"
   }
 }
+

@@ -12,6 +12,7 @@ import ContactSection from './components/ContactSection';
 import DonationModal from './components/DonationModal';
 import MedicalProjects from './components/MedicalProjects';
 import Hero from './components/Hero';
+import SupportPage from './components/SupportPage';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -49,9 +50,9 @@ const Navbar = ({ onOpenDonation }) => {
           <Link to="/projects" onClick={handleLinkClick}>{t('nav.projects')}</Link>
           <Link to="/volunteer" onClick={handleLinkClick}>{t('volunteer.title')}</Link>
           <Link to="/contact" onClick={handleLinkClick}>{t('nav.contact')}</Link>
-          <button className="btn-donate-nav" onClick={() => { onOpenDonation(); handleLinkClick(); }}>
-            {t('hero.supportBtn')}
-          </button>
+          <Link to="/support" className="btn-donate-nav" onClick={handleLinkClick}>
+            {t('nav.support')}
+          </Link>
           <LanguageSwitcher />
         </div>
       </div>
@@ -88,6 +89,7 @@ function App() {
               <Route path="/projects" element={<MedicalProjects onOpenDonation={() => setIsDonationOpen(true)} />} />
               <Route path="/volunteer" element={<VolunteerSection />} />
               <Route path="/contact" element={<ContactSection />} />
+              <Route path="/support" element={<SupportPage />} />
             </Routes>
           </AnimatePresence>
         </main>
