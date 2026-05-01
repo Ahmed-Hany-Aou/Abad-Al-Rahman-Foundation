@@ -1,4 +1,4 @@
-@import './tokens.css';
+﻿@import './tokens.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -276,7 +276,7 @@ button {
   overflow-x: hidden;
 }
 
-/* ── Page Hero ── */
+/* â”€â”€ Page Hero â”€â”€ */
 .projects-hero {
   position: relative;
   min-height: 50vh;
@@ -347,7 +347,7 @@ button {
   margin-inline: auto;
 }
 
-/* ── Existing Services Section ── */
+/* â”€â”€ Existing Services Section â”€â”€ */
 .projects-existing {
   background: var(--color-bg);
 }
@@ -499,7 +499,7 @@ button {
   border-top: 1px solid oklch(94% 0.01 150);
 }
 
-/* ── Impact Dashboard ── */
+/* â”€â”€ Impact Dashboard â”€â”€ */
 .projects-impact {
   background: linear-gradient(160deg, #0e183f 0%, #0b1126 100%);
   position: relative;
@@ -561,7 +561,7 @@ button {
   font-weight: 500;
 }
 
-/* ── Upcoming Project ── */
+/* â”€â”€ Upcoming Project â”€â”€ */
 .projects-upcoming {
   background: var(--color-bg);
 }
@@ -699,7 +699,7 @@ button {
   margin: 0;
 }
 
-/* ── CTA Banner ── */
+/* â”€â”€ CTA Banner â”€â”€ */
 .projects-cta {
   padding: 5rem 1rem;
   background: linear-gradient(135deg, #0e183f 0%, #162454 100%);
@@ -746,7 +746,7 @@ button {
   margin-bottom: 2rem;
 }
 
-/* ── OLD project-card classes (keep for backward compat) ── */
+/* â”€â”€ OLD project-card classes (keep for backward compat) â”€â”€ */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -949,11 +949,11 @@ button {
   opacity: 1;
 }
 
-/* ══════════════════════════════════════════════
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
    SUPPORT PAGE
-   ══════════════════════════════════════════════ */
+   â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-/* ── Hero ── */
+/* â”€â”€ Hero â”€â”€ */
 .support-hero {
   position: relative;
   min-height: 420px;
@@ -1025,7 +1025,7 @@ button {
   50% { transform: translateY(8px); }
 }
 
-/* ── Methods Section ── */
+/* â”€â”€ Methods Section â”€â”€ */
 .support-methods {
   background: var(--color-bg);
 }
@@ -1066,7 +1066,7 @@ button {
   box-shadow: 0 4px 15px color-mix(in srgb, var(--tab-color, var(--color-primary)) 30%, transparent);
 }
 
-/* ── Method Panel ── */
+/* â”€â”€ Method Panel â”€â”€ */
 .method-content {
   max-width: 720px;
   margin: 0 auto;
@@ -1102,7 +1102,7 @@ button {
   margin: 0.2rem 0 0;
 }
 
-/* ── Detail Row ── */
+/* â”€â”€ Detail Row â”€â”€ */
 .detail-row {
   display: flex;
   justify-content: space-between;
@@ -1136,7 +1136,7 @@ button {
   word-break: break-all;
 }
 
-/* ── Copy Button ── */
+/* â”€â”€ Copy Button â”€â”€ */
 .copy-btn {
   display: inline-flex;
   align-items: center;
@@ -1164,7 +1164,7 @@ button {
   background: #ECFDF5;
 }
 
-/* ── InstaPay Redesign ── */
+/* â”€â”€ InstaPay Redesign â”€â”€ */
 .instapay-direct {
   margin-bottom: 1.5rem;
 }
@@ -1272,7 +1272,7 @@ button {
   margin-top: 2px;
 }
 
-/* ── Wallet Note ── */
+/* â”€â”€ Wallet Note â”€â”€ */
 .wallet-note {
   display: flex;
   align-items: center;
@@ -1287,7 +1287,7 @@ button {
   font-weight: 500;
 }
 
-/* ── Impact Section ── */
+/* â”€â”€ Impact Section â”€â”€ */
 .support-impact {
   background: linear-gradient(160deg, #0e183f 0%, #0b1126 100%);
   position: relative;
@@ -1357,7 +1357,7 @@ button {
   line-height: 1.5;
 }
 
-/* ── Help Section ── */
+/* â”€â”€ Help Section â”€â”€ */
 .support-help {
   background: var(--color-bg);
 }
@@ -1563,7 +1563,7 @@ button {
   }
 }
 
-/* ── Validation styles ── */
+/* â”€â”€ Validation styles â”€â”€ */
 .form-group--error input,
 .form-group--error textarea,
 .form-group--error select {
@@ -1659,7 +1659,7 @@ button {
   border-color: var(--color-primary);
 }
 
-/* ── react-international-phone overrides ── */
+/* â”€â”€ react-international-phone overrides â”€â”€ */
 .phone-input-container.react-international-phone-input-container {
   border: 1px solid oklch(90% 0.01 150);
   border-radius: 8px;
@@ -1763,4 +1763,89 @@ button {
   border-radius: 12px;
   margin-block: var(--space-md);
   border: 1px dashed var(--color-primary);
+}
+
+ / *    % %  T r u s t   &   C r e d i b i l i t y   G a l l e r y   ( F r a m e d   C e r t i f i c a t e s )    % %  * / 
+/* ── Trust & Credibility Gallery (Framed Certificates) ── */
+.trust-section {
+  background-color: #f8fafc;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.certificate-card {
+  position: relative;
+  background: #fdfbf7; /* Slight off-white paper matting */
+  padding: 1rem; 
+  /* Wood Frame Effect */
+  border: 14px solid #4e342e; 
+  border-radius: 4px;
+  box-shadow: 
+    inset 0 0 8px rgba(0,0,0,0.6), /* inner frame shadow */
+    0 0 0 2px #bcaaa4 inset, /* inner gold/wood rim */
+    0 12px 24px rgba(0,0,0,0.2); /* hanging wall shadow */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glass glare effect */
+.certificate-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%);
+  pointer-events: none;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.certificate-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* paper shadow */
+  overflow: hidden;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Scan simulation */
+  filter: contrast(1.05) brightness(0.98);
+}
+
+.certificate-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-overlay span {
+  font-size: 2rem;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }

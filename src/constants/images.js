@@ -23,7 +23,7 @@ export const IMAGES = {
   newComplexRender: '/images/new-complex-render-ai.png',
   
   // Trust & Credibility Gallery
-  trustMinistry: '/images/trust-ministry-ai.png',
+  trustMinistry: '/images/official-doc.jpg',
   trustCert1: '/images/trust-cert1-ai.png',
   trustCert2: '/images/trust-cert2-ai.png',
   trustAward: '/images/trust-award-ai.png',
