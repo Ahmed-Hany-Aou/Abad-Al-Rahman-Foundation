@@ -19,7 +19,7 @@ const DONATION_CONFIG = {
     name_ar: 'البنك الأهلي المصري',
     account: '1234567890123',             // ← REPLACE with real account number
     iban: 'EG12 0003 0004 0000 1234 5678 901', // ← REPLACE with real IBAN
-    branch_en: 'Al-Namrouth Branch',
+    branch_en: 'Al-Nmrot Branch',
     branch_ar: 'فرع النمروط',
   },
   wallet: {
@@ -30,7 +30,7 @@ const DONATION_CONFIG = {
 };
 
 /* ── Copy-to-clipboard button ── */
-const CopyButton = ({ text, isRTL }) => {
+const CopyButton = ({ text, t }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -52,19 +52,19 @@ const CopyButton = ({ text, isRTL }) => {
   };
 
   return (
-    <button className={`copy-btn ${copied ? 'copy-btn--copied' : ''}`} onClick={handleCopy} title={isRTL ? 'نسخ' : 'Copy'}>
-      {copied ? <><Check size={14} /> {isRTL ? 'تم النسخ' : 'Copied'}</> : <><Copy size={14} /> {isRTL ? 'نسخ' : 'Copy'}</>}
+    <button className={`copy-btn ${copied ? 'copy-btn--copied' : ''}`} onClick={handleCopy} title={t('support.copy')}>
+      {copied ? <><Check size={14} /> {t('support.copied')}</> : <><Copy size={14} /> {t('support.copy')}</>}
     </button>
   );
 };
 
 /* ── Detail Row (label + value + copy) ── */
-const DetailRow = ({ label, value, isRTL }) => (
+const DetailRow = ({ label, value, t }) => (
   <div className="detail-row">
     <span className="detail-row__label">{label}</span>
     <div className="detail-row__value-wrap">
       <span className="detail-row__value">{value}</span>
-      <CopyButton text={value} isRTL={isRTL} />
+      <CopyButton text={value} t={t} />
     </div>
   </div>
 );
@@ -110,9 +110,9 @@ const SupportPage = () => {
   };
 
   const methods = [
-    { id: 'instapay', icon: Smartphone, label: isRTL ? 'إنستاباي' : 'InstaPay', color: '#7C3AED' },
-    { id: 'bank',     icon: Building2,  label: isRTL ? 'تحويل بنكي' : 'Bank Transfer', color: '#0E183F' },
-    { id: 'wallet',   icon: Wallet,     label: isRTL ? 'محفظة إلكترونية' : 'Mobile Wallet', color: '#E60000' },
+    { id: 'instapay', icon: Smartphone, label: t('support.tabInstapay'), color: '#7C3AED' },
+    { id: 'bank',     icon: Building2,  label: t('support.tabBank'), color: '#0E183F' },
+    { id: 'wallet',   icon: Wallet,     label: t('support.tabWallet'), color: '#E60000' },
   ];
 
   return (
@@ -132,12 +132,10 @@ const SupportPage = () => {
               <Heart size={40} className="support-hero__icon" />
             </div>
             <h1 className="support-hero__title">
-              {isRTL ? 'ساهم في صنع الفرق' : 'Make a Difference'}
+              {t('support.heroTitle')}
             </h1>
             <p className="support-hero__subtitle">
-              {isRTL
-                ? 'تبرعك يصل مباشرةً لمن يحتاجه. اختر الطريقة الأنسب لك وساهم في بناء مستقبل أفضل.'
-                : 'Your donation reaches those in need directly. Choose the method that suits you and help build a better future.'}
+              {t('support.heroSubtitle')}
             </p>
             <a href="#donation-methods" className="support-hero__scroll">
               <ChevronDown size={28} />
@@ -150,11 +148,9 @@ const SupportPage = () => {
       <section id="donation-methods" className="support-methods section-padding">
         <div className="container">
           <motion.div className="section-header text-center" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h2 className="section-title">{isRTL ? 'طرق التبرع' : 'Donation Methods'}</h2>
+            <h2 className="section-title">{t('support.methodsTitle')}</h2>
             <p className="section-description">
-              {isRTL
-                ? 'اختر الطريقة المناسبة لك — جميع التبرعات تصل فوراً'
-                : 'Choose your preferred method — all donations arrive instantly'}
+              {t('support.methodsSubtitle')}
             </p>
           </motion.div>
 
@@ -187,8 +183,8 @@ const SupportPage = () => {
                 <div className="method-panel__header">
                   <Smartphone size={28} className="method-panel__icon" style={{ color: '#7C3AED' }} />
                   <div>
-                    <h3>{isRTL ? 'التبرع عبر إنستاباي' : 'Donate via InstaPay'}</h3>
-                    <p>{isRTL ? 'حوّل فوراً من أي بنك مصري' : 'Transfer instantly from any Egyptian bank'}</p>
+                    <h3>{t('support.instapayHeading')}</h3>
+                    <p>{t('support.instapaySubheading')}</p>
                   </div>
                 </div>
 
@@ -224,11 +220,11 @@ const SupportPage = () => {
                   
                   const errors = {};
                   if (!/^\d{6,20}$/.test(ref)) {
-                    errors.ref = isRTL ? 'يجب أن يحتوي الرقم المرجعي على أرقام فقط (6-20 رقم)' : 'Reference must be digits only (6-20 digits)';
+                    errors.ref = t('support.refError');
                   }
                   
                   if (!instapayMobile || instapayMobile.length < 8) {
-                    errors.mobile = isRTL ? 'رقم الهاتف غير صحيح' : 'Invalid phone number';
+                    errors.mobile = t('support.mobileError');
                   }
 
                   if (Object.keys(errors).length > 0) {
@@ -238,7 +234,7 @@ const SupportPage = () => {
                   
                   setInstapayErrors({});
                   
-                  // Build WhatsApp Message
+                  // Build WhatsApp Message (always in Arabic as per design decision)
                   const sep = '-----------------------------';
                   const lines = [
                     '🌿 *تأكيد تبرع عبر إنستاباي* 🌿',
@@ -246,7 +242,7 @@ const SupportPage = () => {
                     `*الرقم المرجعي:* ${ref}`,
                     `*رقم هاتف المتبرع:* ${instapayMobile}`,
                     sep,
-                    isRTL ? '(يرجى إرفاق صورة الإيصال في هذه المحادثة قبل الإرسال)' : '(Please attach your receipt screenshot in this chat before sending)'
+                    '(يرجى إرفاق صورة الإيصال في هذه المحادثة قبل الإرسال)'
                   ];
                   
                   const text = lines.map(line => encodeURIComponent(line)).join('%0A').replace(/\*/g, '%2A');
@@ -303,31 +299,31 @@ const SupportPage = () => {
                 <div className="method-panel__header">
                   <Building2 size={28} className="method-panel__icon" style={{ color: '#0E183F' }} />
                   <div>
-                    <h3>{isRTL ? 'التحويل البنكي' : 'Bank Transfer'}</h3>
-                    <p>{isRTL ? 'حوّل من أي فرع أو عبر الإنترنت' : 'Transfer from any branch or online banking'}</p>
+                    <h3>{t('support.bankHeading')}</h3>
+                    <p>{t('support.bankSubheading')}</p>
                   </div>
                 </div>
 
                 <div className="bank-details">
                   <DetailRow
-                    label={isRTL ? 'اسم البنك' : 'Bank Name'}
+                    label={t('support.bankNameLabel')}
                     value={isRTL ? DONATION_CONFIG.bank.name_ar : DONATION_CONFIG.bank.name_en}
-                    isRTL={isRTL}
+                    t={t}
                   />
                   <DetailRow
-                    label={isRTL ? 'الفرع' : 'Branch'}
+                    label={t('support.branchLabel')}
                     value={isRTL ? DONATION_CONFIG.bank.branch_ar : DONATION_CONFIG.bank.branch_en}
-                    isRTL={isRTL}
+                    t={t}
                   />
                   <DetailRow
-                    label={isRTL ? 'رقم الحساب' : 'Account Number'}
+                    label={t('support.accountLabel')}
                     value={DONATION_CONFIG.bank.account}
-                    isRTL={isRTL}
+                    t={t}
                   />
                   <DetailRow
                     label="IBAN"
                     value={DONATION_CONFIG.bank.iban}
-                    isRTL={isRTL}
+                    t={t}
                   />
                 </div>
               </div>
@@ -339,30 +335,28 @@ const SupportPage = () => {
                 <div className="method-panel__header">
                   <Wallet size={28} className="method-panel__icon" style={{ color: '#E60000' }} />
                   <div>
-                    <h3>{isRTL ? 'المحفظة الإلكترونية' : 'Mobile Wallet'}</h3>
-                    <p>{isRTL ? 'حوّل عبر فودافون كاش أو أي محفظة إلكترونية' : 'Send via Vodafone Cash or any mobile wallet'}</p>
+                    <h3>{t('support.walletHeading')}</h3>
+                    <p>{t('support.walletSubheading')}</p>
                   </div>
                 </div>
 
                 <div className="wallet-details">
                   <DetailRow
-                    label={isRTL ? 'مزود الخدمة' : 'Provider'}
+                    label={t('support.providerLabel')}
                     value={DONATION_CONFIG.wallet.provider}
-                    isRTL={isRTL}
+                    t={t}
                   />
                   <DetailRow
-                    label={isRTL ? 'رقم المحفظة' : 'Wallet Number'}
+                    label={t('support.walletNumberLabel')}
                     value={DONATION_CONFIG.wallet.number}
-                    isRTL={isRTL}
+                    t={t}
                   />
                 </div>
 
                 <div className="wallet-note">
                   <Shield size={16} />
                   <span>
-                    {isRTL
-                      ? 'تأكد من اسم المستفيد قبل إتمام التحويل'
-                      : 'Verify the recipient name before completing the transfer'}
+                    {t('support.walletWarning')}
                   </span>
                 </div>
               </div>
@@ -376,33 +370,33 @@ const SupportPage = () => {
         <div className="container">
           <motion.div className="section-header text-center" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <h2 className="section-title" style={{ color: 'white' }}>
-              {isRTL ? 'أين يذهب تبرعك؟' : 'Where Does Your Donation Go?'}
+              {t('support.impactTitle')}
             </h2>
           </motion.div>
 
           <div className="impact-mini-grid">
             <ImpactMiniCard
               icon={Home}
-              value={isRTL ? '١٣+ عائلة' : '13+ Families'}
-              label={isRTL ? 'دعم شهري للأسر المحتاجة' : 'Monthly support for families in need'}
+              value={t('support.impactFamilies')}
+              label={t('support.impactFamiliesDesc')}
               color="#10B981"
             />
             <ImpactMiniCard
               icon={Stethoscope}
-              value={isRTL ? '٢٥٠ م²' : '250 m²'}
-              label={isRTL ? 'مجمع طبي قيد الإنشاء' : 'Medical complex under construction'}
+              value={t('support.impactArea')}
+              label={t('support.impactAreaDesc')}
               color="#3B82F6"
             />
             <ImpactMiniCard
               icon={Users}
-              value={isRTL ? '٢٠,٠٠٠ ج.م' : '20,000 EGP'}
-              label={isRTL ? 'مساعدات شهرية' : 'Monthly aid distributed'}
+              value={t('support.impactAid')}
+              label={t('support.impactAidDesc')}
               color="#F59E0B"
             />
             <ImpactMiniCard
               icon={Heart}
-              value={isRTL ? '١٠٠%' : '100%'}
-              label={isRTL ? 'من تبرعك يصل للمستفيدين' : 'Of your donation reaches beneficiaries'}
+              value={t('support.impactPercent')}
+              label={t('support.impactPercentDesc')}
               color="#EF4444"
             />
           </div>
@@ -413,11 +407,9 @@ const SupportPage = () => {
       <section className="support-help section-padding">
         <div className="container text-center">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h3>{isRTL ? 'تحتاج مساعدة في التبرع؟' : 'Need Help Donating?'}</h3>
+            <h3>{t('support.helpTitle')}</h3>
             <p>
-              {isRTL
-                ? 'تواصل معنا مباشرةً عبر واتساب وسنساعدك خطوة بخطوة'
-                : 'Contact us directly on WhatsApp and we\'ll guide you step by step'}
+              {t('support.helpDesc')}
             </p>
             <a
               href={`https://wa.me/${DONATION_CONFIG.whatsapp}`}
@@ -427,7 +419,7 @@ const SupportPage = () => {
               style={{ marginTop: '1rem' }}
             >
               <Smartphone size={20} />
-              {isRTL ? 'تواصل عبر واتساب' : 'Chat on WhatsApp'}
+              {t('support.helpBtn')}
             </a>
           </motion.div>
         </div>

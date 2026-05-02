@@ -9,7 +9,7 @@ import TrustGallery from './components/TrustGallery';
 import AboutSection from './components/AboutSection';
 import VolunteerSection from './components/VolunteerSection';
 import ContactSection from './components/ContactSection';
-import DonationModal from './components/DonationModal';
+
 import MedicalProjects from './components/MedicalProjects';
 import Hero from './components/Hero';
 import SupportPage from './components/SupportPage';
@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 };
 
 // Navbar Component with Mobile Toggle and Router Links
-const Navbar = ({ onOpenDonation }) => {
+const Navbar = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -62,7 +62,6 @@ const Navbar = ({ onOpenDonation }) => {
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [isDonationOpen, setIsDonationOpen] = useState(false);
 
   useEffect(() => {
     const dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
@@ -74,19 +73,19 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="app-container">
-        <Navbar onOpenDonation={() => setIsDonationOpen(true)} />
+        <Navbar />
         <main>
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={
                 <>
-                  <Hero onOpenDonation={() => setIsDonationOpen(true)} />
+                  <Hero />
                   <ImpactSection />
                   <TrustGallery />
                 </>
               } />
               <Route path="/about" element={<AboutSection />} />
-              <Route path="/projects" element={<MedicalProjects onOpenDonation={() => setIsDonationOpen(true)} />} />
+              <Route path="/projects" element={<MedicalProjects />} />
               <Route path="/volunteer" element={<VolunteerSection />} />
               <Route path="/contact" element={<ContactSection />} />
               <Route path="/support" element={<SupportPage />} />
@@ -98,11 +97,7 @@ function App() {
             <p>{t('footer.copy')} {t('title')}. {t('footer.rights')}</p>
           </div>
         </footer>
-        
-        <DonationModal 
-          isOpen={isDonationOpen} 
-          onClose={() => setIsDonationOpen(false)} 
-        />
+
       </div>
     </Router>
   );

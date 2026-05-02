@@ -12,10 +12,10 @@
     "close": "Close Menu"
   },
   "volunteer": {
-    "title": "Team Al-Namrouth",
+    "title": "Team Al-Nmrot",
     "description": "Be part of the change. Join our volunteers and help bring a smile to those in need.",
     "cta": "Join Us Now",
-    "alt": "Team Al-Namrouth Volunteers"
+    "alt": "Team Al-Nmrot Volunteers"
   },
   "contact": {
     "title": "Contact Us",
@@ -23,14 +23,32 @@
     "successMsg": "Your message was sent via WhatsApp!",
     "whatsappLabel": "Send via WhatsApp",
     "phonePlaceholder": "Your phone number (optional)",
+    "chatWhatsapp": "Chat with us on WhatsApp",
+    "sent": "Sent!",
+    "whatsappHint": "📲 WhatsApp will open with your message ready to send",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
       "message": "Message",
       "send": "Send via WhatsApp"
     },
+    "placeholders": {
+      "name": "Your full name",
+      "message": "Write your message here..."
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "nameTooShort": "Name is too short (min 2 characters)",
+      "nameTooLong": "Name is too long (max 60 characters)",
+      "nameLettersOnly": "Name must contain letters only",
+      "emailInvalid": "Invalid email address format",
+      "phoneInvalid": "Must be a valid phone number",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message is too short (min 5 characters)",
+      "messageTooLong": "Message is too long (max 1000 characters)"
+    },
     "info": {
-      "address": "Location: Al-Namrouth Village, Egypt",
+      "address": "Location: Al-Nmrot Village, Egypt",
       "phone": "Donations & Inquiries: 01010455183",
       "whatsapp": "WhatsApp: 01065232774"
     }
@@ -72,6 +90,42 @@
   },
   "hero": {
     "supportBtn": "Support Us Now"
+  },
+  "support": {
+    "heroTitle": "Make a Difference",
+    "heroSubtitle": "Your donation reaches those in need directly. Choose the method that suits you and help build a better future.",
+    "methodsTitle": "Donation Methods",
+    "methodsSubtitle": "Choose your preferred method — all donations arrive instantly",
+    "tabInstapay": "InstaPay",
+    "tabBank": "Bank Transfer",
+    "tabWallet": "Mobile Wallet",
+    "instapayHeading": "Donate via InstaPay",
+    "instapaySubheading": "Transfer instantly from any Egyptian bank",
+    "bankHeading": "Bank Transfer",
+    "bankSubheading": "Transfer from any branch or online banking",
+    "bankNameLabel": "Bank Name",
+    "branchLabel": "Branch",
+    "accountLabel": "Account Number",
+    "walletHeading": "Mobile Wallet",
+    "walletSubheading": "Send via Vodafone Cash or any mobile wallet",
+    "providerLabel": "Provider",
+    "walletNumberLabel": "Wallet Number",
+    "walletWarning": "Verify the recipient name before completing the transfer",
+    "impactTitle": "Where Does Your Donation Go?",
+    "impactFamilies": "13+ Families",
+    "impactFamiliesDesc": "Monthly support for families in need",
+    "impactArea": "250 m²",
+    "impactAreaDesc": "Medical complex under construction",
+    "impactAid": "20,000 EGP",
+    "impactAidDesc": "Monthly aid distributed",
+    "impactPercent": "100%",
+    "impactPercentDesc": "Of your donation reaches beneficiaries",
+    "helpTitle": "Need Help Donating?",
+    "helpDesc": "Contact us directly on WhatsApp and we'll guide you step by step",
+    "helpBtn": "Chat on WhatsApp",
+    "refError": "Reference must be digits only (6-20 digits)",
+    "mobileError": "Invalid phone number",
+    "copy": "Copy",
+    "copied": "Copied"
   }
 }
-

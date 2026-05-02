@@ -1,12 +1,122 @@
 {
   "title": "Yayasan Abad Al-Rahman",
   "subtitle": "Dampak Kemanusiaan Berkelanjutan.. Membangun Masa Depan",
-  "nav": { "home": "Beranda", "impact": "Dampak", "about": "Tentang Kami", "projects": "Proyek Medis", "contact": "Kontak", "open": "Buka Menu", "close": "Tutup Menu" },
-  "volunteer": { "title": "Tim Al-Namrouth", "description": "Jadilah bagian dari perubahan. Bergabunglah dengan relawan kami dan bantu berikan senyuman kepada mereka yang membutuhkan.", "cta": "Bergabung Sekarang", "alt": "Relawan Tim Al-Namrouth" },
-  "contact": { "title": "Hubungi Kami", "getInTouch": "Hubungi Kami", "successMsg": "Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.", "form": { "name": "Nama", "email": "Email", "message": "Pesan", "send": "Kirim" }, "info": { "address": "Alamat: Kairo, Mesir", "phone": "Telepon: +20 100 000 0000", "email": "Email: info@abad-rahman.org" } },
-  "donation": { "title": "Dukung Kami", "description": "Kontribusi Anda membuat perbedaan nyata. Pilih metode donasi yang sesuai untuk Anda.", "bankDetails": "Detail Rekening Bank", "accountNumber": "Nomor Rekening: 123456789", "bankName": "Bank: National Bank of Egypt", "close": "Tutup" },
-  "trust": { "title": "Kepercayaan & Kredibilitas", "description": "Yayasan resmi terdaftar di Kementerian Solidaritas Sosial Mesir di bawah No. 1784 tahun 2007. Kami menjunjung tinggi standar transparansi tertinggi.", "certTitles": { "ministry": "Penghargaan Kementerian", "reg1": "Dokumen Pendaftaran 1", "reg2": "Dokumen Pendaftaran 2", "appreciation": "Sertifikat Penghargaan" } },
+  "nav": {
+    "home": "Beranda",
+    "impact": "Dampak",
+    "about": "Tentang Kami",
+    "projects": "Proyek Medis",
+    "contact": "Kontak",
+    "support": "Dukung Kami",
+    "open": "Buka Menu",
+    "close": "Tutup Menu"
+  },
+  "volunteer": {
+    "title": "Tim Al-Nmrot",
+    "description": "Jadilah bagian dari perubahan. Bergabunglah dengan relawan kami dan bantu berikan senyuman kepada mereka yang membutuhkan.",
+    "cta": "Bergabung Sekarang",
+    "alt": "Relawan Tim Al-Nmrot"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "getInTouch": "Hubungi Kami",
+    "successMsg": "Pesan Anda telah dikirim melalui WhatsApp!",
+    "whatsappLabel": "Kirim via WhatsApp",
+    "phonePlaceholder": "Nomor telepon Anda (opsional)",
+    "chatWhatsapp": "Chat dengan kami di WhatsApp",
+    "sent": "Terkirim!",
+    "whatsappHint": "📲 WhatsApp akan terbuka dengan pesan Anda siap dikirim",
+    "form": {
+      "name": "Nama Lengkap",
+      "email": "Alamat Email",
+      "message": "Pesan",
+      "send": "Kirim via WhatsApp"
+    },
+    "placeholders": {
+      "name": "Nama lengkap Anda",
+      "message": "Tulis pesan Anda di sini..."
+    },
+    "errors": {
+      "nameRequired": "Nama wajib diisi",
+      "nameTooShort": "Nama terlalu pendek (min. 2 karakter)",
+      "nameTooLong": "Nama terlalu panjang (maks. 60 karakter)",
+      "nameLettersOnly": "Nama hanya boleh berisi huruf",
+      "emailInvalid": "Format alamat email tidak valid",
+      "phoneInvalid": "Harus berupa nomor telepon yang valid",
+      "messageRequired": "Pesan wajib diisi",
+      "messageTooShort": "Pesan terlalu pendek (min. 5 karakter)",
+      "messageTooLong": "Pesan terlalu panjang (maks. 1000 karakter)"
+    },
+    "info": {
+      "address": "Lokasi: Desa Al-Nmrot, Mesir",
+      "phone": "Donasi & Pertanyaan: 01010455183",
+      "whatsapp": "WhatsApp: 01065232774"
+    }
+  },
+  "donation": {
+    "title": "Dukung Kami",
+    "description": "Kontribusi Anda membuat perbedaan nyata. Pilih metode donasi yang sesuai untuk Anda.",
+    "bankDetails": "Detail Rekening Bank",
+    "accountNumber": "Nomor Rekening: 123456789",
+    "bankName": "Bank: National Bank of Egypt",
+    "close": "Tutup",
+    "instapay": {
+      "payLink": "Klik di sini untuk membayar ke: ",
+      "orScan": "atau pindai kode QR di bawah ini:",
+      "refPlaceholder": "Masukkan hanya nomor referensi",
+      "mobileLabel": "Nomor HP Anda (digunakan di Instapay) *",
+      "submit": "Kirim Konfirmasi Pembayaran",
+      "whatsappNote": "Anda akan diarahkan ke WhatsApp. Silakan lampirkan tangkapan layar pembayaran Anda di sana."
+    }
+  },
+  "trust": {
+    "title": "Kepercayaan & Kredibilitas",
+    "description": "Yayasan resmi terdaftar di Kementerian Solidaritas Sosial Mesir di bawah No. 1784 tahun 2007. Kami menjunjung tinggi standar transparansi tertinggi.",
+    "certTitles": {
+      "ministry": "Penghargaan Kementerian",
+      "reg1": "Dokumen Pendaftaran 1",
+      "reg2": "Dokumen Pendaftaran 2",
+      "appreciation": "Sertifikat Penghargaan"
+    }
+  },
   "social": { "fb": "FB", "ig": "IG", "tw": "TW" },
   "footer": { "copy": "© 2026", "rights": "Hak cipta dilindungi undang-undang." },
-  "hero": { "supportBtn": "Dukung Kami Sekarang" }
+  "hero": { "supportBtn": "Dukung Kami Sekarang" },
+  "support": {
+    "heroTitle": "Buat Perbedaan",
+    "heroSubtitle": "Donasi Anda langsung sampai kepada yang membutuhkan. Pilih metode yang cocok untuk Anda dan bantu membangun masa depan yang lebih baik.",
+    "methodsTitle": "Metode Donasi",
+    "methodsSubtitle": "Pilih metode yang Anda inginkan — semua donasi sampai secara instan",
+    "tabInstapay": "InstaPay",
+    "tabBank": "Transfer Bank",
+    "tabWallet": "Dompet Digital",
+    "instapayHeading": "Donasi via InstaPay",
+    "instapaySubheading": "Transfer instan dari bank Mesir mana pun",
+    "bankHeading": "Transfer Bank",
+    "bankSubheading": "Transfer dari cabang mana pun atau melalui perbankan online",
+    "bankNameLabel": "Nama Bank",
+    "branchLabel": "Cabang",
+    "accountLabel": "Nomor Rekening",
+    "walletHeading": "Dompet Digital",
+    "walletSubheading": "Kirim melalui Vodafone Cash atau dompet digital apa pun",
+    "providerLabel": "Penyedia",
+    "walletNumberLabel": "Nomor Dompet",
+    "walletWarning": "Pastikan nama penerima sudah benar sebelum menyelesaikan transfer",
+    "impactTitle": "Ke mana donasi Anda pergi?",
+    "impactFamilies": "13+ Keluarga",
+    "impactFamiliesDesc": "Dukungan bulanan untuk keluarga yang membutuhkan",
+    "impactArea": "250 m²",
+    "impactAreaDesc": "Kompleks medis sedang dibangun",
+    "impactAid": "20.000 EGP",
+    "impactAidDesc": "Bantuan bulanan yang didistribusikan",
+    "impactPercent": "100%",
+    "impactPercentDesc": "Dari donasi Anda sampai ke penerima manfaat",
+    "helpTitle": "Butuh bantuan untuk berdonasi?",
+    "helpDesc": "Hubungi kami langsung di WhatsApp dan kami akan memandu Anda langkah demi langkah",
+    "helpBtn": "Chat di WhatsApp",
+    "refError": "Referensi harus berupa angka saja (6-20 digit)",
+    "mobileError": "Nomor telepon tidak valid",
+    "copy": "Salin",
+    "copied": "Tersalin"
+  }
 }

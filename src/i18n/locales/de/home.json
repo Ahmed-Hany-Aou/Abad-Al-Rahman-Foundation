@@ -1,6 +1,8 @@
 {
   "hero": { "title": "Wir verändern das Leben der Menschen", "description": "Eingetragene NGO Nr. 1784 von 2007, die sich für die Stärkung der Gemeinschaft durch medizinische, Ernährungs- und soziale Unterstützung einsetzt.", "supportBtn": "Jetzt unterstützen" },
   "metrics": {
+    "sectionLabel": "Unsere greifbare Wirkung",
+    "sectionTitle": "Wirkung in Zahlen",
     "categories": { "medical": "Medizinische Wirkung", "food": "Ernährungssicherheit", "social": "Soziale Solidarität", "future": "Unser Zukunftsprojekt" },
     "ramadanMeals": { "label": "Ramadan-Mahlzeiten", "value": 25000, "suffix": "" },
     "mealCost": { "label": "Kosten pro Mahlzeit", "value": 65, "suffix": " EGP" },
@@ -18,7 +20,7 @@
   },
   "activities": {
     "title": "Unsere Aktivitäten & Auswirkungen",
-    "kitchen": "Al-Namrouth Wohltätigkeitsküche",
+    "kitchen": "Al-Nmrot Wohltätigkeitsküche",
     "kitchenDesc": "25.000 Mahlzeiten, die während des Ramadan gekocht und direkt an Bedürftige verteilt werden. (8 Jahre kontinuierliche Güte)",
     "pharmacy": "Wohltätigkeitsapotheke",
     "pharmacyDesc": "Ganzjährige Ausgabe kostenloser Behandlungen. Medizin ist ein Recht für jeden Bedürftigen (50.000 EGP monatlich).",

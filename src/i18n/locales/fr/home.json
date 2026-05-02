@@ -1,6 +1,8 @@
 {
   "hero": { "title": "Faire une différence dans la vie des gens", "description": "ONG enregistrée n° 1784 de 2007, travaillant à l'autonomisation de la communauté par un soutien médical, alimentaire et social.", "supportBtn": "Soutenez-nous maintenant" },
   "metrics": {
+    "sectionLabel": "Notre impact tangible",
+    "sectionTitle": "Impact en chiffres",
     "categories": { "medical": "Impact Médical", "food": "Sécurité Alimentaire", "social": "Solidarité Sociale", "future": "Notre Projet Futur" },
     "ramadanMeals": { "label": "Repas du Ramadan", "value": 25000, "suffix": "" },
     "mealCost": { "label": "Coût par repas", "value": 65, "suffix": " EGP" },
@@ -18,7 +20,7 @@
   },
   "activities": {
     "title": "Nos Activités et Impact",
-    "kitchen": "Cuisine Caritative Al-Namrouth",
+    "kitchen": "Cuisine Caritative Al-Nmrot",
     "kitchenDesc": "25 000 repas cuisinés tout au long du Ramadan et distribués directement aux nécessiteux. (8 ans de bonté continue)",
     "pharmacy": "Pharmacie Caritative",
     "pharmacyDesc": "Distribution de traitements gratuits toute l'année. La médecine est un droit pour chaque personne dans le besoin (50 000 EGP par mois).",

@@ -5,6 +5,8 @@
     "supportBtn": "Support Us Now"
   },
   "metrics": {
+    "sectionLabel": "Our Tangible Impact",
+    "sectionTitle": "Impact in Numbers",
     "categories": {
       "medical": "Medical Impact",
       "food": "Food Security",
@@ -27,7 +29,7 @@
   },
   "activities": {
     "title": "Our Activities & Impact",
-    "kitchen": "Al-Namrouth Charity Kitchen",
+    "kitchen": "Al-Nmrot Charity Kitchen",
     "kitchenDesc": "25,000 meals cooked throughout Ramadan and distributed directly to the needy. (8 years of continuous goodness)",
     "pharmacy": "Charity Pharmacy",
     "pharmacyDesc": "Dispensing free treatments year-round. Medicine is a right for every needy person (50,000 EGP monthly).",

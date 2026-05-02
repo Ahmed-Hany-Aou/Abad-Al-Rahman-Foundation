@@ -28,7 +28,7 @@ const Counter = ({ value, suffix = '' }) => {
 };
 
 const MetricsSection = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('home');
 
   const sections = [
     {
@@ -134,10 +134,10 @@ const MetricsSection = () => {
             marginBottom: '1rem',
             display: 'block'
           }}>
-            {i18n.language === 'ar' ? 'أثرنا الملموس' : 'Our Tangible Impact'}
+            {t('metrics.sectionLabel')}
           </span>
           <h2 className="section-title" style={{ color: 'white', fontSize: '3rem' }}>
-            {i18n.language === 'ar' ? 'إنجازاتنا بالأرقام' : 'Impact in Numbers'}
+            {t('metrics.sectionTitle')}
           </h2>
         </motion.div>
 

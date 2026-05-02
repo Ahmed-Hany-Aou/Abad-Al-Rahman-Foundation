@@ -23,11 +23,29 @@
     "successMsg": "تم إرسال رسالتك عبر واتساب!",
     "whatsappLabel": "إرسال عبر واتساب",
     "phonePlaceholder": "رقم هاتفك (اختياري)",
+    "chatWhatsapp": "راسلنا مباشرةً على واتساب",
+    "sent": "تم الإرسال!",
+    "whatsappHint": "📲 سيفتح واتساب تلقائياً برسالتك جاهزة للإرسال",
     "form": {
       "name": "الاسم",
       "email": "البريد الإلكتروني",
       "message": "الرسالة",
       "send": "إرسال عبر واتساب"
+    },
+    "placeholders": {
+      "name": "الاسم الكامل",
+      "message": "اكتب رسالتك هنا..."
+    },
+    "errors": {
+      "nameRequired": "الاسم مطلوب",
+      "nameTooShort": "الاسم قصير جداً (2 أحرف على الأقل)",
+      "nameTooLong": "الاسم طويل جداً (60 حرفاً كحد أقصى)",
+      "nameLettersOnly": "الاسم يجب أن يحتوي على حروف فقط",
+      "emailInvalid": "صيغة البريد الإلكتروني غير صحيحة",
+      "phoneInvalid": "رقم الهاتف يجب أن يكون صحيحاً",
+      "messageRequired": "الرسالة مطلوبة",
+      "messageTooShort": "الرسالة قصيرة جداً (5 أحرف على الأقل)",
+      "messageTooLong": "الرسالة طويلة جداً (1000 حرف كحد أقصى)"
     },
     "info": {
       "address": "العنوان: قرية النمروط، مصر",
@@ -72,5 +90,42 @@
   },
   "hero": {
     "supportBtn": "ادعمنا الآن"
+  },
+  "support": {
+    "heroTitle": "ساهم في صنع الفرق",
+    "heroSubtitle": "تبرعك يصل مباشرةً لمن يحتاجه. اختر الطريقة الأنسب لك وساهم في بناء مستقبل أفضل.",
+    "methodsTitle": "طرق التبرع",
+    "methodsSubtitle": "اختر الطريقة المناسبة لك — جميع التبرعات تصل فوراً",
+    "tabInstapay": "إنستاباي",
+    "tabBank": "تحويل بنكي",
+    "tabWallet": "محفظة إلكترونية",
+    "instapayHeading": "التبرع عبر إنستاباي",
+    "instapaySubheading": "حوّل فوراً من أي بنك مصري",
+    "bankHeading": "التحويل البنكي",
+    "bankSubheading": "حوّل من أي فرع أو عبر الإنترنت",
+    "bankNameLabel": "اسم البنك",
+    "branchLabel": "الفرع",
+    "accountLabel": "رقم الحساب",
+    "walletHeading": "المحفظة الإلكترونية",
+    "walletSubheading": "حوّل عبر فودافون كاش أو أي محفظة إلكترونية",
+    "providerLabel": "مزود الخدمة",
+    "walletNumberLabel": "رقم المحفظة",
+    "walletWarning": "تأكد من اسم المستفيد قبل إتمام التحويل",
+    "impactTitle": "أين يذهب تبرعك؟",
+    "impactFamilies": "١٣+ عائلة",
+    "impactFamiliesDesc": "دعم شهري للأسر المحتاجة",
+    "impactArea": "٢٥٠ م²",
+    "impactAreaDesc": "مجمع طبي قيد الإنشاء",
+    "impactAid": "٢٠,٠٠٠ ج.م",
+    "impactAidDesc": "مساعدات شهرية",
+    "impactPercent": "١٠٠%",
+    "impactPercentDesc": "من تبرعك يصل للمستفيدين",
+    "helpTitle": "تحتاج مساعدة في التبرع؟",
+    "helpDesc": "تواصل معنا مباشرةً عبر واتساب وسنساعدك خطوة بخطوة",
+    "helpBtn": "تواصل عبر واتساب",
+    "refError": "يجب أن يحتوي الرقم المرجعي على أرقام فقط (6-20 رقم)",
+    "mobileError": "رقم الهاتف غير صحيح",
+    "copy": "نسخ",
+    "copied": "تم النسخ"
   }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, animate, useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import {
   Activity, Eye, Bone, HeartPulse, Droplets,
   Stethoscope, Baby, Scissors, FlaskConical, Hospital,
@@ -35,7 +36,7 @@ const Counter = ({ value, suffix = '', prefix = '' }) => {
 };
 
 /* ── Main Component ──────────────────────────── */
-const MedicalProjects = ({ onOpenDonation }) => {
+const MedicalProjects = () => {
   const { t } = useTranslation('projects');
 
   /* ─ Data: upcoming centers ─ */
@@ -254,9 +255,9 @@ const MedicalProjects = ({ onOpenDonation }) => {
             <Heart size={40} className="projects-cta__icon" />
             <h2 className="projects-cta__title">{t('ctaTitle')}</h2>
             <p className="projects-cta__desc">{t('ctaDescription')}</p>
-            <button className="btn-primary btn-glow" onClick={onOpenDonation}>
+            <Link to="/support" className="btn-primary btn-glow">
               {t('ctaButton')}
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>

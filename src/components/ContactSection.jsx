@@ -17,51 +17,51 @@ const EMOJI = {
   speech:  String.fromCodePoint(0x1F4AC), // 💬
 };
 
-/* ── Validation rules ───────────────────────── */
+/* ── Validation rules (returns translation keys) ───────────────────────── */
 const validate = (form) => {
   const errors = {};
 
   // Name — required, 2–60 chars, letters (Arabic + Latin) and spaces only
   if (!form.name.trim()) {
-    errors.name = { ar: 'الاسم مطلوب', en: 'Name is required' };
+    errors.name = 'contact.errors.nameRequired';
   } else if (form.name.trim().length < 2) {
-    errors.name = { ar: 'الاسم قصير جداً (2 أحرف على الأقل)', en: 'Name is too short (min 2 characters)' };
+    errors.name = 'contact.errors.nameTooShort';
   } else if (form.name.trim().length > 60) {
-    errors.name = { ar: 'الاسم طويل جداً (60 حرفاً كحد أقصى)', en: 'Name is too long (max 60 characters)' };
+    errors.name = 'contact.errors.nameTooLong';
   } else if (!/^[\u0600-\u06FFa-zA-Z\s'-]+$/.test(form.name.trim())) {
-    errors.name = { ar: 'الاسم يجب أن يحتوي على حروف فقط', en: 'Name must contain letters only' };
+    errors.name = 'contact.errors.nameLettersOnly';
   }
 
   // Email — optional, but must be valid if provided
   if (form.email.trim()) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) {
-      errors.email = { ar: 'صيغة البريد الإلكتروني غير صحيحة', en: 'Invalid email address format' };
+      errors.email = 'contact.errors.emailInvalid';
     }
   }
 
   // Phone — optional, but must be at least 8 chars if provided
   if (form.phone && form.phone.trim().length > 0 && form.phone.trim().length < 8) {
-    errors.phone = { ar: 'رقم الهاتف يجب أن يكون صحيحاً', en: 'Must be a valid phone number' };
+    errors.phone = 'contact.errors.phoneInvalid';
   }
 
   // Message — required, 5–1000 chars
   if (!form.message.trim()) {
-    errors.message = { ar: 'الرسالة مطلوبة', en: 'Message is required' };
+    errors.message = 'contact.errors.messageRequired';
   } else if (form.message.trim().length < 5) {
-    errors.message = { ar: 'الرسالة قصيرة جداً (5 أحرف على الأقل)', en: 'Message is too short (min 5 characters)' };
+    errors.message = 'contact.errors.messageTooShort';
   } else if (form.message.trim().length > 1000) {
-    errors.message = { ar: 'الرسالة طويلة جداً (1000 حرف كحد أقصى)', en: 'Message is too long (max 1000 characters)' };
+    errors.message = 'contact.errors.messageTooLong';
   }
 
   return errors;
 };
 
 /* ── Field Error Component ───────────────────── */
-const FieldError = ({ error, isRTL }) =>
+const FieldError = ({ error, t }) =>
   error ? (
     <span className="field-error">
       <AlertCircle size={13} />
-      {isRTL ? error.ar : error.en}
+      {t(error)}
     </span>
   ) : null;
 
@@ -198,7 +198,7 @@ const ContactSection = () => {
               className="btn-whatsapp-direct"
             >
               <MessageCircle size={20} />
-              {isRTL ? 'راسلنا مباشرةً على واتساب' : 'Chat with us on WhatsApp'}
+              {t('contact.chatWhatsapp')}
             </a>
           </motion.div>
 
@@ -218,10 +218,10 @@ const ContactSection = () => {
                   value={form.name}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder={isRTL ? 'الاسم الكامل' : 'Your full name'}
+                  placeholder={t('contact.placeholders.name')}
                   maxLength={60}
                 />
-                <FieldError error={errors.name} isRTL={isRTL} />
+                <FieldError error={errors.name} t={t} />
               </div>
 
               {/* Email + Phone side by side */}
@@ -237,7 +237,7 @@ const ContactSection = () => {
                     onBlur={handleBlur}
                     placeholder="example@mail.com"
                   />
-                  <FieldError error={errors.email} isRTL={isRTL} />
+                  <FieldError error={errors.email} t={t} />
                 </div>
 
                 <div className={`form-group ${hasError('phone') ? 'form-group--error' : ''}`}>
@@ -250,7 +250,7 @@ const ContactSection = () => {
                     inputClassName="phone-input-field"
                     className="phone-input-container"
                   />
-                  <FieldError error={errors.phone} isRTL={isRTL} />
+                  <FieldError error={errors.phone} t={t} />
                 </div>
               </div>
 
@@ -266,11 +266,11 @@ const ContactSection = () => {
                   value={form.message}
                   onChange={handleChange}
                   onBlur={handleBlur}
-                  placeholder={isRTL ? 'اكتب رسالتك هنا...' : 'Write your message here...'}
+                  placeholder={t('contact.placeholders.message')}
                   maxLength={1000}
                 />
                 <div className="form-footer-row">
-                  <FieldError error={errors.message} isRTL={isRTL} />
+                  <FieldError error={errors.message} t={t} />
                   <span className="char-count">{form.message.length}/1000</span>
                 </div>
               </div>
@@ -281,16 +281,14 @@ const ContactSection = () => {
                 disabled={sent}
               >
                 {sent ? (
-                  <><CheckCircle size={20} />{isRTL ? 'تم الإرسال!' : 'Sent!'}</>
+                  <><CheckCircle size={20} />{t('contact.sent')}</>
                 ) : (
                   <><Send size={20} />{t('contact.form.send')}</>
                 )}
               </button>
 
               <p className="contact-form__hint">
-                {isRTL
-                  ? '📲 سيفتح واتساب تلقائياً برسالتك جاهزة للإرسال'
-                  : '📲 WhatsApp will open with your message ready to send'}
+                {t('contact.whatsappHint')}
               </p>
             </form>
           </motion.div>

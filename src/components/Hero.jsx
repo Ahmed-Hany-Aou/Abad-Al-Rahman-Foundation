@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, animate, useInView } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Heart, Stethoscope, Utensils, Heart as HeartIcon, Construction } from 'lucide-react';
 
 const Counter = ({ value, suffix = '' }) => {
@@ -27,7 +28,7 @@ const Counter = ({ value, suffix = '' }) => {
   );
 };
 
-const Hero = ({ onOpenDonation }) => {
+const Hero = () => {
   const { t, i18n } = useTranslation(['home', 'common']);
 
   const metricsGroups = [
@@ -151,7 +152,7 @@ const Hero = ({ onOpenDonation }) => {
           textAlign: i18n.language === 'ar' ? 'right' : 'left'
         }}>
           <motion.div variants={itemVariants} className="hero-badge" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-            <Heart size={16} /> <span>{t('title')}</span>
+            <Heart size={16} /> <span>{t('common:title')}</span>
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="hero-title" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: '800', lineHeight: 1.1, margin: '1rem 0' }}>
@@ -163,9 +164,9 @@ const Hero = ({ onOpenDonation }) => {
           </motion.p>
 
           <motion.div variants={itemVariants}>
-            <button className="btn-primary btn-glow" onClick={onOpenDonation}>
+            <Link to="/support" className="btn-primary btn-glow">
               {t('hero.supportBtn')}
-            </button>
+            </Link>
           </motion.div>
         </div>
 

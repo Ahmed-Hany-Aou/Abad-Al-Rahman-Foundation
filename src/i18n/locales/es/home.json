@@ -1,6 +1,8 @@
 {
   "hero": { "title": "Marcando la diferencia en la vida de las personas", "description": "ONG registrada nº 1784 de 2007, que trabaja para empoderar a la comunidad mediante apoyo médico, alimentario y social.", "supportBtn": "Apóyanos ahora" },
   "metrics": {
+    "sectionLabel": "Nuestro impacto tangible",
+    "sectionTitle": "Impacto en cifras",
     "categories": { "medical": "Impacto Médico", "food": "Seguridad Alimentaria", "social": "Solidaridad Social", "future": "Nuestro Proyecto Futuro" },
     "ramadanMeals": { "label": "Comidas de Ramadán", "value": 25000, "suffix": "" },
     "mealCost": { "label": "Costo por comida", "value": 65, "suffix": " EGP" },
@@ -18,11 +20,11 @@
   },
   "activities": {
     "title": "Nuestras Actividades e Impacto",
-    "kitchen": "Cocina Benéfica Al-Namrouth",
+    "kitchen": "Cocina Benéfica Al-Nmrot",
     "kitchenDesc": "25.000 comidas cocinadas durante el Ramadán y distribuidas directamente a los necesitados. (8 años de bondad continua)",
     "pharmacy": "Farmacia Benéfica",
     "pharmacyDesc": "Dispensación de tratamientos gratuitos durante todo el año. La medicina es un derecho para cada persona necesitada (50.000 EGP mensuales).",
-    "medical": "Complexe Médical Existant",
+    "medical": "Complejo Médico Existente",
     "medicalDesc": "10 años de excelencia. Atención médica gratuita integral que incluye incubadoras, cirugía y más de 13 clínicas.",
     "aid": "Ayuda Mensual y General",
     "aidDesc": "Apoyo a más de 25 familias (20.000 EGP mensuales), suministro de equipos médicos y apoyo urgente para la vida."

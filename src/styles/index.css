@@ -1,4 +1,4 @@
-﻿@import './tokens.css';
+@import './tokens.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -65,13 +65,16 @@ button {
 
 /* Navbar */
 .navbar {
-  padding-block: var(--space-sm);
+  padding-block: 0.75rem;
   background: var(--color-bg);
   border-block-end: 1px solid oklch(90% 0.01 150);
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
+  min-height: 56px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-content {
@@ -79,55 +82,116 @@ button {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 100%;
+  min-height: 40px;
 }
 
 .logo {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--color-primary);
-  max-inline-size: 200px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+  flex-shrink: 0;
 }
 
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
   color: var(--color-primary);
+  z-index: 10;
 }
 
 .nav-links {
   display: flex;
-  gap: var(--space-md);
+  flex: 1;
+  justify-content: center;
+  gap: clamp(0.6rem, 1.5vw, 1.5rem);
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
   font-weight: 500;
   color: var(--color-text);
-  font-size: 0.95rem;
+  font-size: clamp(0.78rem, 1vw, 0.92rem);
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .nav-links a:hover {
   color: var(--color-primary);
 }
 
+.btn-donate-nav {
+  background: var(--color-primary) !important;
+  color: white !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 8px;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-donate-nav:hover {
+  background: var(--color-primary-light) !important;
+  transform: translateY(-1px);
+}
+
+
+/* Language Switcher */
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.lang-select {
+  padding: 0.35rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid oklch(90% 0.01 150);
+  background: white;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+  line-height: 1.2;
+  height: 34px;
+}
+
+.lang-select:focus {
+  border-color: var(--color-primary);
+}
+
 /* Mobile Nav */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .menu-toggle {
     display: block;
+    z-index: 1002;
+    position: relative;
   }
 
   .nav-links {
-    position: absolute;
-    top: 100%;
-    inset-inline-start: 0;
-    inset-inline-end: 0;
-    background: var(--color-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fafafa;
     flex-direction: column;
-    padding: var(--space-md);
-    border-block-end: 1px solid oklch(90% 0.01 150);
+    padding: 5rem 2rem 2rem;
     display: none;
-    box-shadow: 0 10px 20px oklch(0% 0 0 / 0.1);
-    gap: var(--space-sm);
+    gap: 0;
+    z-index: 1001;
+    overflow-y: auto;
   }
 
   .nav-links.open {
@@ -136,8 +200,25 @@ button {
 
   .nav-links a {
     width: 100%;
-    padding-block: var(--space-xs);
-    border-block-end: 1px solid oklch(95% 0.01 150);
+    padding: 1rem 0;
+    border-block-end: 1px solid oklch(92% 0.01 150);
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+
+  .btn-donate-nav {
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.8rem 1rem !important;
+    font-size: 1rem !important;
+    border-radius: 12px;
+  }
+
+  .lang-select {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
   }
 }
 
@@ -1752,6 +1833,201 @@ button {
   color: var(--color-text-muted);
 }
 
+@media (max-width: 480px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Validation styles ── */
+.form-group--error input,
+.form-group--error textarea,
+.form-group--error select {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+  background: #fff8f8;
+}
+
+.field-error {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 5px;
+  font-size: 0.82rem;
+  color: #ef4444;
+  font-weight: 500;
+  animation: shake 0.25s ease;
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  25%      { transform: translateX(-4px); }
+  75%      { transform: translateX(4px); }
+}
+
+.required-star {
+  color: #ef4444;
+  font-weight: 700;
+  margin-inline-start: 2px;
+}
+
+/* Character counter + error in one row */
+.form-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-height: 1.4rem;
+}
+
+.char-count {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  margin-top: 5px;
+  margin-inline-start: auto;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-block-start: var(--space-md);
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.form-group input, .form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid oklch(90% 0.01 150);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* â”€â”€ react-international-phone overrides â”€â”€ */
+.phone-input-container.react-international-phone-input-container {
+  border: 1px solid oklch(90% 0.01 150);
+  border-radius: 8px;
+  background: white;
+  height: 48px;
+  width: 100%;
+}
+
+.phone-input-container .react-international-phone-country-selector-button {
+  border: none !important;
+  background: transparent !important;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 8px 0 0 8px;
+}
+
+[dir="rtl"] .phone-input-container .react-international-phone-country-selector-button {
+  border-radius: 0 8px 8px 0;
+}
+
+.phone-input-container .react-international-phone-input {
+  border: none !important;
+  background: transparent !important;
+  height: 100%;
+  font: inherit;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 0.8rem;
+}
+
+.phone-input-container .react-international-phone-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Focus state for the whole container */
+.form-group:focus-within .phone-input-container.react-international-phone-input-container {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px oklch(45% 0.12 150 / 0.1);
+}
+
+/* Error state */
+.form-group--error .phone-input-container.react-international-phone-input-container {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12) !important;
+  background: #fff8f8 !important;
+}
+
+/* Country dropdown styling */
+.react-international-phone-country-selector-dropdown {
+  z-index: 999 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15) !important;
+  max-height: 250px !important;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: oklch(0% 0 0 / 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: var(--space-sm);
+}
+
+.modal-content {
+  background: white;
+  padding: var(--space-lg);
+  border-radius: 24px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  animation: modal-appear 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes modal-appear {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-sm);
+  inset-inline-end: var(--space-sm);
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+}
+
 .modal-title {
   color: var(--color-primary);
   margin-block-end: var(--space-sm);
@@ -1765,7 +2041,6 @@ button {
   border: 1px dashed var(--color-primary);
 }
 
- / *    % %  T r u s t   &   C r e d i b i l i t y   G a l l e r y   ( F r a m e d   C e r t i f i c a t e s )    % %  * / 
 /* ── Trust & Credibility Gallery (Framed Certificates) ── */
 .trust-section {
   background-color: #f8fafc;

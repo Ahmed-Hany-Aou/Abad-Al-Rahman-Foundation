@@ -1,12 +1,122 @@
 {
   "title": "Fondation Abad Al-Rahman",
   "subtitle": "Impact humanitaire durable.. Construire l'avenir",
-  "nav": { "home": "Accueil", "impact": "Impact", "about": "À propos", "projects": "Projets Médicaux", "contact": "Contact", "open": "Ouvrir le menu", "close": "Fermer le menu" },
-  "volunteer": { "title": "Équipe Al-Namrouth", "description": "Faites partie du changement. Rejoignez nos bénévoles et aidez à redonner le sourire à ceux qui en ont besoin.", "cta": "Rejoignez-nous maintenant", "alt": "Bénévoles de l'équipe Al-Namrouth" },
-  "contact": { "title": "Contactez-nous", "getInTouch": "Entrer en contact", "successMsg": "Merci pour votre message ! Nous vous répondrons bientôt.", "form": { "name": "Nom", "email": "Email", "message": "Message", "send": "Envoyer" }, "info": { "address": "Adresse : Le Caire, Égypte", "phone": "Téléphone : +20 100 000 0000", "email": "Email : info@abad-rahman.org" } },
-  "donation": { "title": "Soutenez-nous", "description": "Votre contribution fait une réelle différence. Choisissez la méthode de don qui vous convient.", "bankDetails": "Coordonnées bancaires", "accountNumber": "Numéro de compte : 123456789", "bankName": "Banque : National Bank of Egypt", "close": "Fermer" },
-  "trust": { "title": "Confiance et Crédibilité", "description": "Fondation officielle enregistrée auprès du ministère égyptien de la Solidarité sociale sous le n° 1784 de 2007. Nous adhérons aux normes de transparence les plus élevées.", "certTitles": { "ministry": "Appréciation du ministère", "reg1": "Document d'enregistrement 1", "reg2": "Document d'enregistrement 2", "appreciation": "Certificat d'appréciation" } },
+  "nav": {
+    "home": "Accueil",
+    "impact": "Impact",
+    "about": "À propos",
+    "projects": "Projets Médicaux",
+    "contact": "Contact",
+    "support": "Soutenez-nous",
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu"
+  },
+  "volunteer": {
+    "title": "Équipe Al-Nmrot",
+    "description": "Faites partie du changement. Rejoignez nos bénévoles et aidez à redonner le sourire à ceux qui en ont besoin.",
+    "cta": "Rejoignez-nous maintenant",
+    "alt": "Bénévoles de l'équipe Al-Nmrot"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "getInTouch": "Entrer en contact",
+    "successMsg": "Votre message a été envoyé via WhatsApp !",
+    "whatsappLabel": "Envoyer via WhatsApp",
+    "phonePlaceholder": "Votre numéro de téléphone (optionnel)",
+    "chatWhatsapp": "Discutez avec nous sur WhatsApp",
+    "sent": "Envoyé !",
+    "whatsappHint": "📲 WhatsApp s'ouvrira avec votre message prêt à envoyer",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "message": "Message",
+      "send": "Envoyer via WhatsApp"
+    },
+    "placeholders": {
+      "name": "Votre nom complet",
+      "message": "Écrivez votre message ici..."
+    },
+    "errors": {
+      "nameRequired": "Le nom est obligatoire",
+      "nameTooShort": "Le nom est trop court (min 2 caractères)",
+      "nameTooLong": "Le nom est trop long (max 60 caractères)",
+      "nameLettersOnly": "Le nom ne doit contenir que des lettres",
+      "emailInvalid": "Format d'adresse e-mail invalide",
+      "phoneInvalid": "Le numéro de téléphone doit être valide",
+      "messageRequired": "Le message est obligatoire",
+      "messageTooShort": "Le message est trop court (min 5 caractères)",
+      "messageTooLong": "Le message est trop long (max 1000 caractères)"
+    },
+    "info": {
+      "address": "Adresse : Village Al-Nmrot, Égypte",
+      "phone": "Dons & Renseignements : 01010455183",
+      "whatsapp": "WhatsApp : 01065232774"
+    }
+  },
+  "donation": {
+    "title": "Soutenez-nous",
+    "description": "Votre contribution fait une réelle différence. Choisissez la méthode de don qui vous convient.",
+    "bankDetails": "Coordonnées bancaires",
+    "accountNumber": "Numéro de compte : 123456789",
+    "bankName": "Banque : National Bank of Egypt",
+    "close": "Fermer",
+    "instapay": {
+      "payLink": "Cliquez ici pour payer à : ",
+      "orScan": "ou scannez le code QR ci-dessous :",
+      "refPlaceholder": "Entrez uniquement le numéro de référence",
+      "mobileLabel": "Votre numéro de portable (utilisé sur Instapay) *",
+      "submit": "Confirmer le paiement",
+      "whatsappNote": "Vous serez redirigé vers WhatsApp. Veuillez y joindre la capture d'écran de votre paiement."
+    }
+  },
+  "trust": {
+    "title": "Confiance et Crédibilité",
+    "description": "Fondation officielle enregistrée auprès du ministère égyptien de la Solidarité sociale sous le n° 1784 de 2007. Nous adhérons aux normes de transparence les plus élevées.",
+    "certTitles": {
+      "ministry": "Appréciation du ministère",
+      "reg1": "Document d'enregistrement 1",
+      "reg2": "Document d'enregistrement 2",
+      "appreciation": "Certificat d'appréciation"
+    }
+  },
   "social": { "fb": "FB", "ig": "IG", "tw": "TW" },
   "footer": { "copy": "© 2026", "rights": "Tous droits réservés." },
-  "hero": { "supportBtn": "Soutenez-nous maintenant" }
+  "hero": { "supportBtn": "Soutenez-nous maintenant" },
+  "support": {
+    "heroTitle": "Faites la différence",
+    "heroSubtitle": "Votre don parvient directement à ceux qui en ont besoin. Choisissez la méthode qui vous convient et contribuez à un avenir meilleur.",
+    "methodsTitle": "Méthodes de don",
+    "methodsSubtitle": "Choisissez votre méthode préférée — tous les dons arrivent instantanément",
+    "tabInstapay": "InstaPay",
+    "tabBank": "Virement bancaire",
+    "tabWallet": "Portefeuille mobile",
+    "instapayHeading": "Don via InstaPay",
+    "instapaySubheading": "Transférez instantanément depuis n'importe quelle banque égyptienne",
+    "bankHeading": "Virement bancaire",
+    "bankSubheading": "Transférez depuis n'importe quelle agence ou via la banque en ligne",
+    "bankNameLabel": "Nom de la banque",
+    "branchLabel": "Agence",
+    "accountLabel": "Numéro de compte",
+    "walletHeading": "Portefeuille mobile",
+    "walletSubheading": "Envoyez via Vodafone Cash ou tout portefeuille mobile",
+    "providerLabel": "Fournisseur",
+    "walletNumberLabel": "Numéro du portefeuille",
+    "walletWarning": "Vérifiez le nom du bénéficiaire avant de confirmer le transfert",
+    "impactTitle": "Où va votre don ?",
+    "impactFamilies": "13+ familles",
+    "impactFamiliesDesc": "Soutien mensuel aux familles dans le besoin",
+    "impactArea": "250 m²",
+    "impactAreaDesc": "Complexe médical en construction",
+    "impactAid": "20 000 EGP",
+    "impactAidDesc": "Aide mensuelle distribuée",
+    "impactPercent": "100%",
+    "impactPercentDesc": "De votre don parvient aux bénéficiaires",
+    "helpTitle": "Besoin d'aide pour faire un don ?",
+    "helpDesc": "Contactez-nous directement sur WhatsApp et nous vous guiderons étape par étape",
+    "helpBtn": "Discuter sur WhatsApp",
+    "refError": "La référence doit contenir uniquement des chiffres (6-20 chiffres)",
+    "mobileError": "Numéro de téléphone invalide",
+    "copy": "Copier",
+    "copied": "Copié"
+  }
 }

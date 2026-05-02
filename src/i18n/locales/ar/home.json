@@ -5,6 +5,8 @@
     "supportBtn": "ادعمنا الآن"
   },
   "metrics": {
+    "sectionLabel": "أثرنا الملموس",
+    "sectionTitle": "إنجازاتنا بالأرقام",
     "categories": {
       "medical": "الأثر الطبي",
       "food": "الأمن الغذائي",
